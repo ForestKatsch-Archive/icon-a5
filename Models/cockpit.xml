@@ -3,11 +3,13 @@
 <PropertyList>
 
   <path>Models/cockpit.ac</path>
+  <texture-path>./textures/cockpit</texture-path>
 
   <animation>
     <name>interior</name>
     <object-name>dashboard</object-name>
     <object-name>instrument cluster</object-name>
+    <object-name>instrument cluster covers</object-name>
     <object-name>outer instrument cluster</object-name>
     <object-name>engine cluster</object-name>
     <object-name>lower instrument cluster</object-name>
@@ -35,7 +37,8 @@
     <object-name>gps display</object-name>
     <object-name>center console switch trim</object-name>
     <object-name>display glare shield</object-name>
-  </animation>
+    <object-name>altimeter adjustment legend</object-name> 
+ </animation>
   
   <animation>
     <name>cluster</name>
@@ -79,6 +82,7 @@
     <name>legends</name>
     <object-name>airspeed legend</object-name>
     <object-name>altimeter legend</object-name>
+    <object-name>altimeter adjustment legend</object-name>
     <object-name>aoa legend</object-name>
     <object-name>fuel legend</object-name>
     <object-name>tachometer legend</object-name>
@@ -95,7 +99,8 @@
   <animation>
     <type>shader</type>
     <shader>chrome</shader>
-    <texture>Aircraft/icon-a5/Models/clear-glass.png</texture>
+    <texture>Aircraft/icon-a5/Models/textures/clear-glass.png</texture>
+    <object-name>instrument cluster covers</object-name>
     <object-name>inside windshield</object-name>
   </animation>
 
@@ -152,18 +157,18 @@
       </entry>
       <entry>
 	<ind> 140</ind>
-	<dep> 300</dep>
+	<dep>-300</dep>
       </entry>
     </interpolation>
     <center>
-      <x-m>0</x-m>
-      <y-m>-0.3459</y-m>
-      <z-m>-0.22</z-m>
+      <x-m>-2.1197</x-m>
+      <y-m>-0.359</y-m>
+      <z-m>-0.215473</z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y> 0</y>
-      <z> 0</z>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
     </axis>
   </animation>
 
@@ -173,16 +178,16 @@
     <type>rotate</type>
     <object-name>altimeter 100 needle</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.36</factor>
+    <factor>-0.36</factor>
     <center>
-      <x-m> 0.0</x-m>
-      <y-m>-0.2141</y-m>
-      <z-m>-0.22</z-m>
+      <x-m>-2.1197</x-m>
+      <y-m>-0.241</y-m>
+      <z-m>-0.215473</z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y> 0</y>
-      <z> 0</z>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
     </axis>
   </animation>
 
@@ -190,16 +195,42 @@
     <type>rotate</type>
     <object-name>altimeter 1000 needle</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
-    <factor>0.036</factor>
+    <factor>-0.036</factor>
     <center>
-      <x-m> 0.0</x-m>
-      <y-m>-0.2141</y-m>
-      <z-m>-0.22</z-m>
+      <x-m>-2.1197</x-m>
+      <y-m>-0.241</y-m>
+      <z-m>-0.215473</z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y> 0</y>
-      <z> 0</z>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>altimeter adjustment legend</object-name>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <interpolation>
+      <entry>
+	<ind>24.0</ind>
+	<dep>150</dep>
+      </entry>
+      <entry>
+	<ind>34.0</ind>
+	<dep>-150</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.1197</x-m>
+      <y-m>-0.241</y-m>
+      <z-m>-0.215473</z-m>
+    </center>
+    <axis>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
     </axis>
   </animation>
 
@@ -212,7 +243,7 @@
     <interpolation>
       <entry>
 	<ind>-6</ind>
-	<dep>-25</dep>
+	<dep>25</dep>
       </entry>
       <entry>
 	<ind>0</ind>
@@ -220,18 +251,18 @@
       </entry>
       <entry>
 	<ind>15</ind>
-	<dep>50</dep>
+	<dep>-50</dep>
       </entry>
     </interpolation>
     <center>
-      <x-m> 0.0</x-m>
-      <y-m>-0.26</y-m>
-      <z-m>-0.135</z-m>
+      <x-m>-2.1538</x-m>
+      <y-m>-0.286</y-m>
+      <z-m>-0.171732</z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y> 0</y>
-      <z> 0</z>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
     </axis>
   </animation>
 
@@ -248,18 +279,18 @@
       </entry>
       <entry>
 	<ind>20</ind>
-	<dep>240</dep>
+	<dep>-240</dep>
       </entry>
     </interpolation>
     <center>
-      <x-m> 0.0</x-m>
-      <y-m>-0.4290786</y-m>
-      <z-m>-0.31</z-m>
+      <x-m>-2.1082</x-m>
+      <y-m>-0.434</y-m>
+      <z-m>-0.28047</z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y> 0</y>
-      <z> 0</z>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
     </axis>
   </animation>
 
@@ -277,80 +308,63 @@
       </entry>
       <entry>
 	<ind>7000</ind>
-	<dep>280</dep>
+	<dep>-280</dep>
       </entry>
     </interpolation>
     <center>
-      <x-m> 0.0</x-m>
-      <y-m>-0.1310786</y-m>
-      <z-m>-0.31</z-m>
+      <x-m>-2.1082</x-m>
+      <y-m>-0.166</y-m>
+      <z-m>-0.28047</z-m>
     </center>
     <axis>
-      <x>-1</x>
-      <y> 0</y>
-      <z> 0</z>
-    </axis>
-  </animation>
-
-  <animation>
-    <type>translate</type>
-    <object-name>cluster</object-name>
-    <value>-0.2</value>
-    <axis>
-      <x>0</x>
+      <x>0.9275984563424636</x>
       <y>0</y>
-      <z>1</z>
+      <z>0.07240154365753637</z>
     </axis>
   </animation>
 
+  <!-- Knobs -->
+  
   <animation>
-    <type>rotate</type>
-    <object-name>cluster</object-name>
-    <value>-100</value>
-    <center>
-      <x-m>-2.1</x-m>
-      <y-m> 0.0</y-m>
-      <z-m>-0.22</z-m>
-    </center>
-    <axis>
-      <x>0</x>
-      <y>1</y>
-      <z>0</z>
-    </axis>
-  </animation>
 
-  <animation>
     <type>knob</type>
     <object-name>altimeter knob</object-name>
-    <property>/instrumentation/altimeter/setting-inhg</property>
-    <factor>100</factor>
+    <property>instrumentation/altimeter/setting-inhg</property>
+    <factor>-10</factor>
+
     <center>
-      <x-m>-0.24</x-m>
-      <y-m>-2.11</y-m>
-      <z-m>-0.26</z-m>
+      <x-m>-2.1046</x-m>
+      <y-m>-0.27</y-m>
+      <z-m>-0.243281</z-m>
     </center>
     <axis>
-      <x>1</x>
+      <x>0.9275984563424636</x>
       <y>0</y>
-      <z>0</z>
+      <z>0.07240154365753637</z>
     </axis>
 
     <action>
       <binding>
 	<command>property-adjust</command>
-	<property>/controls/flight/elevator</property>
-	<factor>0.1</factor>
-	<min>0.0</min>
-	<max>1.0</max>                
+	<property>instrumentation/altimeter/setting-inhg</property>
+	<factor>0.025</factor>
+	<min>24.0</min>
+	<max>34.0</max>                
 	<wrap>false</wrap>
+      </binding>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>altimeter-setting</tooltip-id>
+	<label>Altimeter inHg: %5.2f</label>
+	<property>instrumentation/altimeter/setting-inhg</property>
       </binding>
     </action>
 
     <hovered>
       <binding>
 	<command>set-tooltip</command>
-	<tooltip-id>alt-setting</tooltip-id>
-	<label>Altimeter In Hg: %5.2f</label>
+	<tooltip-id>altimeter-setting</tooltip-id>
+	<label>Altimeter inHg: %5.2f</label>
 	<property>instrumentation/altimeter/setting-inhg</property>
       </binding>
     </hovered>

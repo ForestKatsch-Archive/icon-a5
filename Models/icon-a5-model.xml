@@ -3,6 +3,7 @@
 <PropertyList>
 
   <path>Models/icon-a5.ac</path>
+  <texture-path>Models/textures</texture-path>
 
   <model>
     <name>cockpit</name>
@@ -112,6 +113,7 @@
     <object-name>left tire</object-name>
     <object-name>right tire</object-name>
     <object-name>nose tire</object-name>
+    <object-name>shadow</object-name>
   </animation>
 
   <!-- Hide exterior if inside -->
@@ -119,6 +121,7 @@
   <animation>
     <type>select</type>
     <!--    <object-name>exterior</object-name> -->
+    <object-name>shadow</object-name>
     <object-name>canopy frame</object-name>
     <object-name>windshield</object-name>
     <object-name>left window</object-name>

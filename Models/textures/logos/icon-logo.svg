@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   version="1.0"
+   width="370.000000pt"
+   height="400.000000pt"
+   viewBox="0 0 370.000000 400.000000"
+   preserveAspectRatio="xMidYMid meet"
+   id="svg2"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="ICON_logo_0608a.svg">
+  <defs
+     id="defs24" />
+  <sodipodi:namedview
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1"
+     objecttolerance="10"
+     gridtolerance="10"
+     guidetolerance="10"
+     inkscape:pageopacity="0"
+     inkscape:pageshadow="2"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     id="namedview22"
+     showgrid="true"
+     inkscape:zoom="0.6675088"
+     inkscape:cx="316.81491"
+     inkscape:cy="234.84698"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="g6">
+    <inkscape:grid
+       type="xygrid"
+       id="grid3001" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata4">
+Created by potrace 1.11, written by Peter Selinger 2001-2013
+<rdf:RDF>
+  <cc:Work
+     rdf:about="">
+    <dc:format>image/svg+xml</dc:format>
+    <dc:type
+       rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+    <dc:title></dc:title>
+  </cc:Work>
+</rdf:RDF>
+</metadata>
+  <g
+     transform="translate(0.000000,400.000000) scale(0.100000,-0.100000)"
+     fill="#000000"
+     stroke="none"
+     id="g6">
+    <path
+       d="M1716 3968 c-33 -79 -82 -914 -66 -1106 17 -198 83 -390 188 -547 62 -93 218 -248 319 -317 l81 -56 -81 82 c-130 129 -187 247 -209 435 -13 115 -3 228 35 366 51 190 9 550 -104 895 -42 128 -83 217 -118 258 -25 29 -30 28 -45 -10z"
+       id="path8"
+       style="fill:#ff0000;fill-opacity:1" />
+    <path
+       d="M1650 2639 c0 -43 -30 -142 -65 -217 -57 -121 -131 -204 -260 -292 -73 -50 -143 -81 -292 -129 -137 -44 -213 -84 -341 -178 -153 -113 -378 -329 -474 -457 -96 -128 -111 -185 -45 -172 73 14 821 390 961 483 252 167 420 405 486 687 21 89 45 285 36 294 -3 3 -6 -6 -6 -19z"
+       id="path10"
+       style="fill:#ff0000;fill-opacity:1" />
+    <path
+       d="M1830 1959 c-133 -9 -310 -60 -420 -120 -30 -17 -46 -27 -35 -23 137 47 286 56 411 24 159 -41 278 -112 444 -267 81 -75 121 -102 224 -152 203 -99 527 -197 729 -222 166 -21 208 6 125 75 -126 105 -756 512 -893 577 -180 86 -379 123 -585 108z"
+       id="path12"
+       style="fill:#ff0000;fill-opacity:1" />
+    <path
+       d="M2 438 l3 -303 60 0 60 0 0 300 0 300 -63 3 -62 3 2 -303z"
+       id="path14" />
+    <path
+       d="M391 722 c-19 -9 -48 -34 -65 -55 l-31 -39 -3 -162 c-5 -220 11 -272 99 -316 36 -19 60 -20 419 -20 l380 0 0 60 0 60 -369 0 c-323 0 -372 2 -385 16 -23 23 -23 315 0 338 13 14 62 16 385 16 l369 0 0 60 0 60 -382 0 c-345 0 -386 -2 -417 -18z"
+       id="path16" />
+    <path
+       d="M1454 721 c-18 -11 -45 -36 -60 -57 -29 -37 -29 -40 -32 -192 -5 -196 1 -233 41 -279 55 -62 59 -63 444 -63 342 0 349 1 387 23 25 14 48 39 63 66 21 41 23 55 23 216 0 161 -2 175 -23 216 -15 27 -38 52 -63 66 -38 22 -45 23 -394 23 -332 0 -357 -1 -386 -19z m726 -121 c18 -18 20 -33 20 -165 0 -132 -2 -147 -20 -165 -19 -19 -33 -20 -337 -20 -249 1 -322 4 -335 14 -16 12 -18 33 -18 174 0 143 2 162 18 171 10 7 138 11 335 11 304 0 318 -1 337 -20z"
+       id="path18" />
+    <path
+       d="M2500 448 c0 -161 4 -299 9 -306 5 -9 25 -12 62 -10 l54 3 3 243 2 242 349 0 c324 0 349 -1 364 -18 15 -16 17 -48 17 -245 l0 -227 60 0 c55 0 60 2 66 25 3 13 4 122 2 242 -4 244 -8 259 -75 310 l-36 28 -439 3 -438 3 0 -293z"
+       id="path20" />
+  </g>
+</svg>

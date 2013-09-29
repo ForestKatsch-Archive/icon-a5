@@ -1,0 +1,254 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="256"
+   height="256"
+   id="svg2"
+   version="1.1"
+   inkscape:version="0.48.4 r9939"
+   sodipodi:docname="fuel.svg">
+  <defs
+     id="defs4" />
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="2"
+     inkscape:cx="275.85052"
+     inkscape:cy="113.13211"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:snap-bbox="true"
+     inkscape:window-width="1366"
+     inkscape:window-height="717"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     inkscape:window-maximized="1"
+     showguides="true"
+     inkscape:guide-bbox="true">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2985"
+       empspacing="4"
+       visible="true"
+       enabled="true"
+       snapvisiblegridlinesonly="true" />
+    <sodipodi:guide
+       orientation="0,1"
+       position="0,128"
+       id="guide3784" />
+    <sodipodi:guide
+       orientation="1,0"
+       position="128,-8"
+       id="guide3786" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title></dc:title>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(0,-796.36218)">
+    <path
+       sodipodi:type="arc"
+       style="fill:#000000;fill-opacity:1;stroke:none"
+       id="path2987"
+       sodipodi:cx="64"
+       sodipodi:cy="64"
+       sodipodi:rx="64"
+       sodipodi:ry="64"
+       d="M 128,64 A 64,64 0 1 1 0,64 64,64 0 1 1 128,64 z"
+       transform="matrix(2,0,0,2,0,796.36218)" />
+    <text
+       xml:space="preserve"
+       style="font-size:10px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       x="127.7261"
+       y="1040.3622"
+       id="text3757"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3759"
+         x="127.7261"
+         y="1040.3622">ICON</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:40px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#000000;fill-opacity:1;stroke:none;font-family:PT Sans;-inkscape-font-specification:PT Sans"
+       x="81.785713"
+       y="197.78571"
+       id="text3761"
+       sodipodi:linespacing="125%"
+       transform="translate(0,796.36218)"><tspan
+         sodipodi:role="line"
+         id="tspan3763"
+         x="87.137276"
+         y="197.78571"> </tspan></text>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 128,4 0,16"
+       id="path3788"
+       inkscape:connector-curvature="0"
+       transform="translate(0,796.36218)"
+       inkscape:transform-center-y="-116" />
+    <path
+       inkscape:transform-center-y="-58"
+       inkscape:connector-curvature="0"
+       id="path3790"
+       d="m 20.61285,862.36218 13.856406,8"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       inkscape:transform-center-x="100.45895" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 235.38717,986.36219 -13.85641,-8"
+       id="path3808"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-y="58.00001"
+       inkscape:transform-center-x="-100.45896" />
+    <path
+       inkscape:transform-center-x="-100.45896"
+       inkscape:transform-center-y="-58.000005"
+       inkscape:connector-curvature="0"
+       id="path3810"
+       d="m 235.38717,862.36217 -13.85641,8.00001"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none" />
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       x="53.648438"
+       y="976.60071"
+       id="text3812"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3814"
+         x="57.320312"
+         y="976.60071"><tspan
+           style="font-size:20px"
+           id="tspan3820">0 </tspan></tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3816"
+       y="892.36218"
+       x="54.873905"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       xml:space="preserve"><tspan
+         y="892.36218"
+         x="54.873905"
+         id="tspan3818"
+         sodipodi:role="line"
+         style="font-size:20px">5</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       x="125.64086"
+       y="844.36218"
+       id="text3822"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3824"
+         x="125.64086"
+         y="844.36218">10</tspan></text>
+    <text
+       sodipodi:linespacing="125%"
+       id="text3826"
+       y="976.60071"
+       x="196.83296"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       xml:space="preserve"><tspan
+         y="976.60071"
+         x="196.83296"
+         id="tspan3828"
+         sodipodi:role="line">20<tspan
+   id="tspan3830"
+   style="font-size:20px" /></tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:20px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       x="200"
+       y="892.36218"
+       id="text3832"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3834"
+         x="200"
+         y="892.36218">15</tspan></text>
+    <path
+       inkscape:transform-center-y="36.464"
+       inkscape:connector-curvature="0"
+       id="path3836"
+       d="M 10.068987,962.68028 21.481635,958.9721"
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:nodetypes="cc"
+       inkscape:transform-center-x="112.2247" />
+    <path
+       inkscape:transform-center-x="117.35361"
+       sodipodi:nodetypes="cc"
+       style="fill:none;stroke:#ffffff;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="M 4.6792839,937.3237 16.613512,936.06937"
+       id="path3840"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-y="12.334345" />
+    <path
+       transform="matrix(2,0,0,2,0,796.36218)"
+       d="M 15.069564,92.249999 A 56.5,56.5 0 0 1 7.5,63.999997"
+       sodipodi:ry="56.5"
+       sodipodi:rx="56.5"
+       sodipodi:cy="64"
+       sodipodi:cx="64"
+       id="path3842"
+       style="fill:none;stroke:#d30000;stroke-width:5;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       sodipodi:type="arc"
+       sodipodi:start="2.6179939"
+       sodipodi:end="3.1415927"
+       sodipodi:open="true" />
+    <path
+       inkscape:transform-center-x="100.45895"
+       style="fill:none;stroke:#ffffff;stroke-width:2;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-opacity:1;stroke-dasharray:none"
+       d="m 20.612851,986.36218 13.856407,-8"
+       id="path3804"
+       inkscape:connector-curvature="0"
+       inkscape:transform-center-y="58" />
+    <text
+       sodipodi:linespacing="125%"
+       id="text3844"
+       y="884.36218"
+       x="127.7261"
+       style="font-size:15px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       xml:space="preserve"><tspan
+         y="884.36218"
+         x="127.7261"
+         id="tspan3846"
+         sodipodi:role="line">FUEL</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-size:8px;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;text-align:center;line-height:125%;letter-spacing:0px;word-spacing:0px;text-anchor:middle;fill:#ffffff;fill-opacity:1;stroke:none;font-family:Venus Rising;-inkscape-font-specification:Venus Rising"
+       x="127.7261"
+       y="964.36218"
+       id="text3850"
+       sodipodi:linespacing="125%"><tspan
+         sodipodi:role="line"
+         id="tspan3852"
+         x="127.7261"
+         y="964.36218">GALLONS</tspan></text>
+  </g>
+</svg>

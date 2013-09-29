@@ -6,7 +6,7 @@ The Icon A5 airplane for Flightgear.
 Currently in development; features in the current revision include:
 
 * Basic exterior model
-* Basic cockpit
+* Basic cockpit with lots of modelled dummy controls in the center console
 * Control surface movement
 * Major five instruments work (airspeed, AoA, altimeter, fuel, tachometer)
 * Landing gear and floats

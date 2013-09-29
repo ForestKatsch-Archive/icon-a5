@@ -120,13 +120,13 @@
   <!-- FLOATS -->
 
   <!-- Nose [0] -->
-  <gear x="2.3" y="0.0" z="-1.3" compression="1.1" sfric="8" dfric="0.3" spring="7"
+  <gear x="2.3" y="0.0" z="-1.5" compression="1.0" sfric="8" dfric="0.3" spring="7"
 	speed-planing="10" spring-factor-not-planing="0.8" reduce-friction-by-extension="0.5"
 	on-water="1" on-solid="0" ignored-by-solver="0">
   </gear>
 
   <!-- Rudder [1] -->
-  <gear x="-2.8" y="0.0" z="-1.15" compression="5.0" spring="0.2" sfric="0.2" dfric="0.2"
+  <gear x="-2.8" y="0.0" z="-1.2" compression="5.0" spring="0.2" sfric="0.2" dfric="0.2"
 	speed-planing="25" spring-factor-not-planing="0.8" reduce-friction-by-extension="0.5"
 	on-water="1" on-solid="0" ignored-by-solver="1">
     <control-input axis="/controls/flight/rudder" control="STEER" square="true"/>
@@ -139,25 +139,25 @@
   </gear>
 
   <!-- Step [2] -->
-  <gear x="0.82" y="0.0" z="-1.43" compression="1.0" spring="2" sfric="0.9" dfric="0.9"
+  <gear x="0.82" y="0.0" z="-1.25" compression="0.9" spring="2" sfric="0.9" dfric="0.9"
 	speed-planing="8" spring-factor-not-planing="0.8" reduce-friction-by-extension="3"
 	on-water="1" on-solid="0" ignored-by-solver="1">
   </gear>
 
   <!-- Tail [3] -->
-  <gear x="-1.5" y="0.0" z="-1.1" compression="0.9" spring="5" sfric="0.8" dfric="0.9"
+  <gear x="-1.5" y="0.0" z="-1.0" compression="0.8" spring="5" sfric="0.8" dfric="0.9"
 	speed-planing="8" spring-factor-not-planing="0.8" reduce-friction-by-extension="1.5"
 	on-water="1" on-solid="0" ignored-by-solver="1">
   </gear>
 
   <!-- Left platform [4] -->
-  <gear x="-0.4" y="2.0" z="-1.1" compression="0.8" spring="8" sfric="0.8" dfric="0.9"
+  <gear x="-0.4" y="2.0" z="-1.1" compression="0.7" spring="8" sfric="0.8" dfric="0.9"
 	speed-planing="8" spring-factor-not-planing="0.8" reduce-friction-by-extension="1.5"
 	on-water="1" on-solid="0" ignored-by-solver="1">
   </gear>
 
   <!-- Right platform [5] -->
-  <gear x="-0.4" y="-2.0" z="-1.1" compression="0.8" spring="8" sfric="0.8" dfric="0.9"
+  <gear x="-0.4" y="-2.0" z="-1.1" compression="0.7" spring="8" sfric="0.8" dfric="0.9"
 	speed-planing="8" spring-factor-not-planing="0.8" reduce-friction-by-extension="1.5"
 	on-water="1" on-solid="0" ignored-by-solver="1">
   </gear>
