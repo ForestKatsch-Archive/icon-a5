@@ -1,0 +1,360 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Models/cockpit.ac</path>
+
+  <animation>
+    <name>interior</name>
+    <object-name>dashboard</object-name>
+    <object-name>instrument cluster</object-name>
+    <object-name>outer instrument cluster</object-name>
+    <object-name>engine cluster</object-name>
+    <object-name>lower instrument cluster</object-name>
+    <object-name>glovebox</object-name>
+    <object-name>altimeter 100 needle</object-name>
+    <object-name>altimeter 1000 needle</object-name>
+    <object-name>airspeed needle</object-name>
+    <object-name>aoa needle</object-name>
+    <object-name>fuel needle</object-name>
+    <object-name>tachometer needle</object-name>
+    <object-name>oil temp needle</object-name>
+    <object-name>oil pressure needle</object-name>
+    <object-name>cylinder head temp needle</object-name>
+    <object-name>airspeed legend</object-name>
+    <object-name>altimeter legend</object-name>
+    <object-name>aoa legend</object-name>
+    <object-name>fuel legend</object-name>
+    <object-name>tachometer legend</object-name>
+    <object-name>altimeter knob</object-name>
+    <object-name>altimeter knob case</object-name>
+    <object-name>needle hubs</object-name>
+    <object-name>walls</object-name>
+    <object-name>inside windshield</object-name>
+    <object-name>gear switch</object-name>
+    <object-name>gps display</object-name>
+    <object-name>center console switch trim</object-name>
+    <object-name>display glare shield</object-name>
+  </animation>
+  
+  <animation>
+    <name>cluster</name>
+    <object-name>instrument cluster</object-name>
+    <object-name>outer instrument cluster</object-name>
+    <object-name>engine cluster</object-name>
+    <object-name>lower instrument cluster</object-name>
+    <object-name>altimeter 100 needle</object-name>
+    <object-name>altimeter 1000 needle</object-name>
+    <object-name>airspeed needle</object-name>
+    <object-name>aoa needle</object-name>
+    <object-name>fuel needle</object-name>
+    <object-name>tachometer needle</object-name>
+    <object-name>oil temp needle</object-name>
+    <object-name>oil pressure needle</object-name>
+    <object-name>cylinder head temp needle</object-name>
+    <object-name>airspeed legend</object-name>
+    <object-name>altimeter legend</object-name>
+    <object-name>aoa legend</object-name>
+    <object-name>fuel legend</object-name>
+    <object-name>tachometer legend</object-name>
+    <object-name>altimeter knob</object-name>
+    <object-name>altimeter knob case</object-name>
+    <object-name>needle hubs</object-name>
+  </animation>
+  
+  <animation>
+    <name>needles</name>
+    <object-name>altimeter 100 needle</object-name>
+    <object-name>altimeter 1000 needle</object-name>
+    <object-name>airspeed needle</object-name>
+    <object-name>aoa needle</object-name>
+    <object-name>fuel needle</object-name>
+    <object-name>tachometer needle</object-name>
+    <object-name>oil temp needle</object-name>
+    <object-name>oil pressure needle</object-name>
+    <object-name>cylinder head temp needle</object-name>
+  </animation>
+
+  <animation>
+    <name>legends</name>
+    <object-name>airspeed legend</object-name>
+    <object-name>altimeter legend</object-name>
+    <object-name>aoa legend</object-name>
+    <object-name>fuel legend</object-name>
+    <object-name>tachometer legend</object-name>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>interior</object-name>
+    <condition>
+      <property>sim/current-view/internal</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/icon-a5/Models/clear-glass.png</texture>
+    <object-name>inside windshield</object-name>
+  </animation>
+
+  <!-- All needles glow -->
+
+  <animation>
+    <type>material</type>
+    <object-name>needles</object-name>
+    <emission>
+      <red>0.8</red>
+      <green>0.0</green>
+      <blue>0.0</blue>
+    </emission> 
+  </animation>
+
+  <!-- All legends glow -->
+
+  <animation>
+    <type>material</type>
+    <object-name>legends</object-name>
+    <emission>
+      <red>0.7</red>
+      <green>0.85</green>
+      <blue>0.5</blue>
+    </emission> 
+  </animation>
+
+  <!-- GPS glows -->
+
+  <animation>
+    <type>material</type>
+    <object-name>gps display</object-name>
+    <emission>
+      <red>0.4</red>
+      <green>0.4</green>
+      <blue>0.4</blue>
+    </emission> 
+  </animation>
+
+  <!-- Airspeed -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>airspeed needle</object-name>
+    <property>velocities/airspeed-kt</property>
+    <interpolation>
+      <entry>
+	<ind> 0</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 20</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 140</ind>
+	<dep> 300</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>0</x-m>
+      <y-m>-0.3459</y-m>
+      <z-m>-0.22</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+  <!-- Altimeter -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>altimeter 100 needle</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.36</factor>
+    <center>
+      <x-m> 0.0</x-m>
+      <y-m>-0.2141</y-m>
+      <z-m>-0.22</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>altimeter 1000 needle</object-name>
+    <property>instrumentation/altimeter/indicated-altitude-ft</property>
+    <factor>0.036</factor>
+    <center>
+      <x-m> 0.0</x-m>
+      <y-m>-0.2141</y-m>
+      <z-m>-0.22</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+  <!-- AOA -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aoa needle</object-name>
+    <property>orientation/alpha-deg</property>
+    <interpolation>
+      <entry>
+	<ind>-6</ind>
+	<dep>-25</dep>
+      </entry>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>15</ind>
+	<dep>50</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> 0.0</x-m>
+      <y-m>-0.26</y-m>
+      <z-m>-0.135</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+  <!-- Fuel -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>fuel needle</object-name>
+    <property>consumables/fuel/tank[0]/level-gal_us</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>20</ind>
+	<dep>240</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> 0.0</x-m>
+      <y-m>-0.4290786</y-m>
+      <z-m>-0.31</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+  <!-- Tachometer -->
+
+
+  <animation>
+    <type>rotate</type>
+    <object-name>tachometer needle</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>7000</ind>
+	<dep>280</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m> 0.0</x-m>
+      <y-m>-0.1310786</y-m>
+      <z-m>-0.31</z-m>
+    </center>
+    <axis>
+      <x>-1</x>
+      <y> 0</y>
+      <z> 0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>cluster</object-name>
+    <value>-0.2</value>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>cluster</object-name>
+    <value>-100</value>
+    <center>
+      <x-m>-2.1</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>-0.22</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>knob</type>
+    <object-name>altimeter knob</object-name>
+    <property>/instrumentation/altimeter/setting-inhg</property>
+    <factor>100</factor>
+    <center>
+      <x-m>-0.24</x-m>
+      <y-m>-2.11</y-m>
+      <z-m>-0.26</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>/controls/flight/elevator</property>
+	<factor>0.1</factor>
+	<min>0.0</min>
+	<max>1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>alt-setting</tooltip-id>
+	<label>Altimeter In Hg: %5.2f</label>
+	<property>instrumentation/altimeter/setting-inhg</property>
+      </binding>
+    </hovered>
+
+  </animation>
+
+</PropertyList>

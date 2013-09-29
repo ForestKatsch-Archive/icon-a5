@@ -1,0 +1,534 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <path>Models/icon-a5.ac</path>
+
+  <model>
+    <name>cockpit</name>
+    <path>Aircraft/icon-a5/Models/cockpit.xml</path>
+  </model>
+
+  <!-- SHADOW -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>shadow</object-name>
+    <property>/orientation/roll-deg</property>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>shadow</object-name>
+    <property>/orientation/pitch-deg</property>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>shadow</object-name>
+    <property>/position/altitude-agl-ft</property>
+    <factor>0.30</factor>
+    <offset-m>-1.5</offset-m>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>shadow</object-name>
+    <property>/gear/gear[8]/compression-m</property>
+    <factor>-1</factor>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>-1</z>
+    </axis>
+  </animation>
+
+  <!-- SPRAY -->
+
+  <!-- Step-->
+
+  <!-- <model> -->
+  <!--   <path>Aircraft/icon-a5/Models/Effects/wingtip-left-spray.xml</path> -->
+  <!--   <name>wingtip left spray</name> -->
+  <!--   <offsets> -->
+  <!--     <x-m>0.7</x-m> -->
+  <!--     <y-m>-5.1</y-m> -->
+  <!--     <z-m>0.1</z-m> -->
+  <!--   </offsets> -->
+  <!-- </model> -->
+
+  <!-- <model> -->
+  <!--   <path>Aircraft/icon-a5/Models/Effects/wingtip-right-spray.xml</path> -->
+  <!--   <name>wingtip right spray</name> -->
+  <!--   <offsets> -->
+  <!--     <x-m>0.7</x-m> -->
+  <!--     <y-m>5.1</y-m> -->
+  <!--     <z-m>0.1</z-m> -->
+  <!--   </offsets> -->
+  <!-- </model> -->
+
+  <!-- OBJECT DEFINITIONS -->
+
+  <animation>
+    <name>exterior</name>
+    <object-name>prop disc</object-name>
+    <object-name>prop blades</object-name>
+    <object-name>spinner</object-name>
+    <object-name>windshield</object-name>
+    <object-name>left window</object-name>
+    <object-name>right window</object-name>
+    <object-name>side windows</object-name>
+    <object-name>fuselage</object-name>
+    <object-name>left wing</object-name>
+    <object-name>left wing</object-name>
+    <object-name>left aileron</object-name>
+    <object-name>right aileron</object-name>
+    <object-name>wing struts</object-name>
+    <object-name>horizontal stabilizer</object-name>
+    <object-name>rudder</object-name>
+    <object-name>water rudder</object-name>
+    <object-name>fuel cap</object-name>
+    <object-name>headlights</object-name>
+    <object-name>canopy frame</object-name>
+    <object-name>cockpit walls</object-name>
+    <object-name>left gear</object-name>
+    <object-name>right gear</object-name>
+    <object-name>nose gear</object-name>
+    <object-name>left tire</object-name>
+    <object-name>right tire</object-name>
+    <object-name>nose tire</object-name>
+  </animation>
+
+  <!-- Hide exterior if inside -->
+
+  <animation>
+    <type>select</type>
+    <!--    <object-name>exterior</object-name> -->
+    <object-name>canopy frame</object-name>
+    <object-name>windshield</object-name>
+    <object-name>left window</object-name>
+    <object-name>right window</object-name>
+    <object-name>side windows</object-name>
+    <object-name>cockpit walls</object-name>
+    <object-name>headlights</object-name>
+    <condition>
+      <not>
+	<property>/sim/current-view/internal</property>
+      </not>
+    </condition>
+  </animation>
+
+  <!-- Propeller -->
+  <animation>
+    <name>prop</name>
+    <object-name>prop disc</object-name>
+    <object-name>prop blades</object-name>
+    <object-name>spinner</object-name>
+  </animation>
+
+  <animation>
+    <name>prop-blades</name>
+    <object-name>prop blades</object-name>
+  </animation>
+
+  <animation>
+    <name>prop-disc</name>
+    <object-name>prop disc</object-name>
+  </animation>
+
+  <animation>
+    <name>windows</name>
+    <object-name>windshield</object-name>
+    <object-name>left window</object-name>
+    <object-name>side windows</object-name>
+  </animation>
+
+  <animation>
+    <name>left-gear</name>
+    <object-name>left gear</object-name>
+    <object-name>left tire</object-name>
+  </animation>
+
+  <animation>
+    <name>right-gear</name>
+    <object-name>right gear</object-name>
+    <object-name>right tire</object-name>
+  </animation>
+
+  <animation>
+    <name>nose-gear</name>
+    <object-name>nose gear</object-name>
+    <object-name>nose tire</object-name>
+  </animation>
+
+  <!-- SHINYNESS-->
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/icon-a5/Models/glass.png</texture>
+    <object-name>windshield</object-name>
+    <object-name>left window</object-name>
+    <object-name>side windows</object-name>
+  </animation>
+
+  <animation>
+    <type>shader</type>
+    <shader>chrome</shader>
+    <texture>Aircraft/icon-a5/Models/headlights.png</texture>
+    <object-name>headlights</object-name>
+  </animation>
+
+  <!-- PROPELLER -->
+
+  <animation>
+    <type>spin</type>
+    <object-name>prop</object-name>
+    <property>/engines/engine[0]/rpm</property>
+    <center>
+      <x-m> 0.0  </x-m>
+      <y-m> 0.0  </y-m>
+      <z-m> 0.328</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>prop-blades</object-name>
+    <transparency>
+      <alpha-prop>/engines/engine[0]/rpm</alpha-prop>
+      <factor>-0.005</factor>
+      <offset>1</offset>
+      <min>0</min>
+      <max>1</max>
+    </transparency>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>prop-disc</object-name>
+    <transparency>
+      <alpha-prop>/engines/engine[0]/rpm</alpha-prop>
+      <factor>0.005</factor>
+      <offset>0.1</offset>
+      <min>0</min>
+      <max>0.999</max>
+    </transparency>
+  </animation>
+  
+  <!-- CONTROLS -->
+
+  <!-- Elevator -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>elevator</object-name>
+    <property>/surface-positions/elevator-pos-norm</property>
+    <factor>55</factor>
+    <center>
+      <x-m> 2.80</x-m>
+      <y-m> 0.00</y-m>
+      <z-m> 0.86</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- Left aileron -->
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>left aileron</object-name>
+    <property>/surface-positions/right-aileron-pos-norm</property>
+    <factor>55</factor>
+    <axis>
+      <x1-m>-0.4525067</x1-m>
+      <y1-m>-3.08451</y1-m>
+      <z1-m> 0.1651876</z1-m>
+      <x2-m>-0.6740012</x2-m>
+      <y2-m>-4.70892</y2-m>
+      <z2-m> 0.2379706</z2-m>
+    </axis>
+  </animation>
+
+  <!-- Right aileron -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right aileron</object-name>
+    <property>/surface-positions/right-aileron-pos-norm</property>
+    <factor>55</factor>
+    <axis>
+      <x1-m>-0.4525067</x1-m>
+      <y1-m> 3.08451</y1-m>
+      <z1-m> 0.1651876</z1-m>
+      <x2-m>-0.6740012</x2-m>
+      <y2-m> 4.70892</y2-m>
+      <z2-m> 0.2379706</z2-m>
+    </axis>
+  </animation>
+  
+  <!-- Rudder -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>rudder</object-name>
+    <property>/surface-positions/rudder-pos-norm</property>
+    <factor>-55</factor>
+    <axis>
+      <x1-m> 2.07791</x1-m>
+      <y1-m> 0</y1-m>
+      <z1-m> -0.3124619</z1-m>
+      <x2-m> 2.52048</x2-m>
+      <y2-m> 0</y2-m>
+      <z2-m> 0.6929686</z2-m>
+    </axis>
+  </animation>
+
+  <!-- Water rudder -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>water rudder</object-name>
+    <property>/surface-positions/rudder-pos-norm</property>
+    <factor>-55</factor>
+    <center>
+      <x-m> 1.3453</x-m>
+      <y-m> 0</y-m>
+      <z-m>-0.6277127</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>0</y>
+      <z>1</z>
+    </axis>
+  </animation>
+
+  <!-- GEAR -->
+  
+  <animation>
+    <type>translate</type>
+    <object-name>left tire</object-name>
+    <property>gear/gear[9]/compression-m</property>
+    <axis>
+      <x>0</x>
+      <y>-1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>translate</type>
+    <object-name>right tire</object-name>
+    <property>gear/gear[10]/compression-m</property>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <!-- Extend/retract -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left nose door</object-name>
+    <property>gear/gear[8]/position-norm</property>
+    <interpolation>
+      <entry>
+	<ind> 0</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 0.4</ind>
+	<dep>-90</dep>
+      </entry>
+      <entry>
+	<ind> 1</ind>
+	<dep>-90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.5777</x-m>
+      <y-m>-0.0630674</y-m>
+      <z-m>-0.9623983</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>-0.2</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>right nose door</object-name>
+    <property>gear/gear[9]/position-norm</property>
+    <interpolation>
+      <entry>
+	<ind> 0</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 0.4</ind>
+	<dep> 90</dep>
+      </entry>
+      <entry>
+	<ind> 1</ind>
+	<dep> 90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.5777</x-m>
+      <y-m> 0.0630674</y-m>
+      <z-m>-0.9623983</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>-0.2</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>nose-gear</object-name>
+    <property>gear/gear[8]/position-norm</property>
+    <interpolation>
+      <entry>
+	<ind> 0</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 0.4</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 1</ind>
+	<dep> 45</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.3</x-m>
+      <y-m> 0</y-m>
+      <z-m>-0.76</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>rotate</type>
+    <object-name>left-gear</object-name>
+    <property>gear/gear[9]/position-norm</property>
+    <interpolation>
+      <entry>
+	<ind> 0</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 0.4</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 1</ind>
+	<dep>-90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-0.505</x-m>
+      <y-m>-0.95</y-m>
+      <z-m>-0.68</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <animation>
+    <type>rotate</type>
+    <object-name>right-gear</object-name>
+    <property>gear/gear[10]/position-norm</property>
+    <interpolation>
+      <entry>
+	<ind> 0</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 0.4</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 1</ind>
+	<dep> 90</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-0.505</x-m>
+      <y-m> 0.95</y-m>
+      <z-m>-0.68</z-m>
+    </center>
+    <axis>
+      <x>1</x>
+      <y>0</y>
+      <z>0</z>
+    </axis>
+  </animation>
+  
+  <!-- Compress -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>nose-gear</object-name>
+    <property>gear/gear[8]/compression-norm</property>
+    <interpolation>
+      <entry>
+	<ind> 0</ind>
+	<dep> 0</dep>
+      </entry>
+      <entry>
+	<ind> 0.1</ind>
+	<dep>-15</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-3.3</x-m>
+      <y-m> 0</y-m>
+      <z-m>-0.76</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+</PropertyList>

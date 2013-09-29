@@ -1,0 +1,122 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <params>
+    <compression>/gear/gear[0]/compression-norm</compression>
+    <speed>/gear/gear[0]/roll-speed-mps</speed>
+  </params>
+
+  <particlesystem>
+    <name>wingtip spray</name>
+
+    <texture>spray.png</texture>
+    
+    <emissive>false</emissive>
+    <lighting>true</lighting>
+    
+    <attach>world</attach>
+    
+    <placer>
+      <type>point</type>
+    </placer>
+
+    <condition>
+      <and>
+	<greater-than>
+	  <property alias="../../../params/compression" />
+	  <value>0.005</value>
+	</greater-than>
+	<greater-than>
+	  <property alias="../../../params/speed" />
+	  <value>0.1</value>
+	</greater-than>
+      </and>
+    </condition>
+    
+    <shooter>
+      <theta-min-deg>0</theta-min-deg>
+      <theta-max-deg>0</theta-max-deg>
+      <phi-min-deg>0</phi-min-deg>
+      <phi-max-deg>0</phi-max-deg>
+      <speed>
+	<value>0</value>
+      </speed>
+      <rotation-speed>
+	<x-min-deg-sec>0</x-min-deg-sec>
+	<y-min-deg-sec>0</y-min-deg-sec>
+	<z-min-deg-sec>0</z-min-deg-sec>
+	<x-max-deg-sec>0</x-max-deg-sec>
+	<y-max-deg-sec>0</y-max-deg-sec>
+	<z-max-deg-sec>0</z-max-deg-sec>
+      </rotation-speed>
+    </shooter>
+    
+    <counter>
+      <particles-per-sec>
+	<value>
+	  <property alias="../../../params/speed" />
+	  <factor>0.2</factor>
+	</value>
+	<spread>0</spread>
+      </particles-per-sec>
+    </counter>
+
+    <align>billboard</align>
+    
+    <particle>
+      <start>
+	<color>
+	  <red>
+	    <value>1.0</value>
+	  </red>
+	  <green>
+	    <value>1.0</value>
+	  </green>
+	  <blue>
+	    <value>1.0</value>
+	  </blue>
+	  <alpha>
+	    <value>1.0</value>
+	  </alpha>
+	</color>
+	<size>
+	  <value>0.25</value>
+	</size>
+      </start>
+      
+      <end>
+	<color>
+	  <red>
+	    <value>1</value>
+	  </red>
+	  <green>
+	    <value>0.1</value>
+	  </green>
+	  <blue>
+	    <value>0.1</value>
+	  </blue>
+	  <alpha>
+	    <value>0.0</value>
+	  </alpha>
+	</color>
+	<size>
+	  <value>4</value>
+	</size>
+      </end>
+      
+      <life-sec>
+	<value>5</value>
+      </life-sec>
+      
+      <mass-kg>0.25</mass-kg>
+      <radius-m>0.1</radius-m>
+    </particle>
+    
+    <program>
+      <fluid>air</fluid>
+      <gravity type="bool">true</gravity>
+      <wind type="bool">true</wind>
+    </program>
+
+  </particlesystem>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <sim> 
+    <description>Icon A5</description>
+    <author>Forest Ka</author>
+
+    <flight-model>yasim</flight-model>
+    <aero>icon-a5-yasim</aero>
+
+    <model>
+      <path>Aircraft/icon-a5/Models/icon-a5-model.xml</path>
+    </model>
+
+    <sound>
+      <path>Aircraft/icon-a5/Sounds/icon-a5-sound.xml</path>
+    </sound>
+
+    <view n="0">
+      <internal>true</internal>
+      <config>
+	<x-offset-m>-0.15</x-offset-m>
+	<y-offset-m> -0.1</y-offset-m>
+	<z-offset-m>-1.45</z-offset-m>
+	<default-field-of-view-deg type="double">65</default-field-of-view-deg>
+	<pitch-offset-deg>-5</pitch-offset-deg>
+      </config>
+    </view>
+
+    <weight n="0">
+      <name>Pilot</name>
+      <weight-lb>200</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="1">
+      <name>Passenger</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>300</max-lb>
+    </weight>
+
+    <weight n="2">
+      <name>Baggage</name>
+      <weight-lb>0</weight-lb>
+      <max-lb>60</max-lb>
+    </weight>
+
+  </sim>
+
+  <consumables>
+    <fuel>
+      <tank n="0">
+	<name>Main</name>
+	<capacity-gal_us type="double">20</capacity-gal_us>
+	<level-gal_us type="double">20</level-gal_us>
+	<selected type="bool">true</selected>
+      </tank>
+    </fuel>
+  </consumables>
+
+  <controls>
+    <gear>
+      <brake-parking type="double">1</brake-parking>
+    </gear>
+  </controls>
+
+  <engines>
+    <engine n="0">
+      <running type="bool">true</running>
+      <rpm type="double">700</rpm>
+    </engine>
+  </engines>
+
+</PropertyList>

@@ -1,0 +1,75 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <fx>
+    <engine>
+      <name>engine</name>
+      <mode>looped</mode>
+      <path>Aircraft/icon-a5/Sounds/engine.wav</path>
+      <property>engines/engine[0]/running</property>
+      <pitch>
+	<property>engines/engine[0]/rpm</property>
+	<factor>0.00017</factor>
+	<min>0.1</min>
+	<max>1000.0</max>
+	<offset>0.1</offset>
+      </pitch>
+      <volume>
+	<property>sim/current-view/internal</property>
+	<factor>-0.25</factor>
+	<offset>0.8</offset>
+      </volume>
+      <reference-dist>60.0</reference-dist>
+      <max-dist>1500.0</max-dist>
+    </engine>
+
+    <engine>
+      <name>cranking</name>
+      <mode>looped</mode>
+      <path>Sounds/cranking.wav</path>
+      <condition>
+	<and>
+	  <property>engines/engine[0]/cranking</property>
+	  <not>
+	    <property>engines/engine[0]/running</property>
+	  </not>
+	</and>
+      </condition>
+      <volume>
+	<property>sim/current-view/internal</property>
+	<factor>-0.2</factor>
+	<offset>0.5</offset>
+      </volume>
+      <reference-dist>60.0</reference-dist>
+      <max-dist>2000.0</max-dist>
+    </engine>
+
+    <wind>
+      <name>wind</name>
+      <mode>looped</mode>
+      <path>Sounds/wind.wav</path>
+      <property>sim/current-view/internal</property>
+      <volume>
+	<property>velocities/airspeed-kt</property>
+	<factor>0.002</factor>
+	<min>0.01</min>
+	<max>0.4</max>
+      </volume>
+    </wind>
+
+    <gear>
+      <name>gear</name>
+      <mode>in-transit</mode>
+      <path>Aircraft/icon-a5/Sounds/gear.wav</path>
+      <property>gear/gear[8]/position-norm</property>
+      <volume>
+	<property>sim/current-view/internal</property>
+	<factor>-0.4</factor>
+	<offset>1.3</offset>
+      </volume>
+    </gear>
+
+  </fx>
+  
+</PropertyList>
