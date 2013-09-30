@@ -13,13 +13,13 @@ Currently in development.
 * Tachometer
 * Gear switch
 
+###  Exterior
+
 * Basic exterior model
-* Basic cockpit with lots of modelled dummy controls in the center console
 * Control surface movement
-* Major five instruments work (airspeed, AoA, altimeter, fuel, tachometer)
 * Landing gear and floats
 
-Features that are **not** included (but hopefully will be soon):
+### Not included (but on todo list)
 
 * Textured exterior
 * Damping on AoA (or more realistic behaviour)
@@ -32,9 +32,9 @@ Features that are **not** included (but hopefully will be soon):
 * Parachute (for the entire plane)
 * Side windows
 
-Features that aren't included nor high priority:
+### Not included and low priority
 
-* Folding wings. I mean, what can you do with folding wings?... :)
+* Folding wings. I mean, what can you do with folding wings?... watch them?
 * Garmin aera 796 GPS unit. (Mostly because this will require a full touchscreen device emulator in Nasal...)
 * Unfortunately, Rembrandt. My computer isn't fast enough for Rembrandt.
 
@@ -43,7 +43,7 @@ Features that aren't included nor high priority:
 ### Preferred:
 
     $ git clone https://github.com/forest-ka/icon-a5.git $FG_ROOT/Aircraft/icon-a5
-    
+
 where `$FG_ROOT` is the root installation directory. To update:
 
     $ cd $FG_ROOT/Aircraft/icon-a5
@@ -53,4 +53,5 @@ where `$FG_ROOT` is the root installation directory. To update:
 
 Click the "Download ZIP" button on the right, move it to `$FG_ROOT`, unzip it, and rename the
 `icon-a5-master` directory to `icon-a5`.
+
 You'll have to repeat this (after removing the old directory and zip file) for every update, though.
