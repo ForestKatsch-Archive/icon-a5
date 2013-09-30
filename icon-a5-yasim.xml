@@ -24,19 +24,19 @@
   
   <!-- Cockpit -->
   <fuselage ax="3.5" ay="0" az="-0.6" bx="1.5" by="0" bz="-0.6"
-	    width="1.0" taper="0.0" midpoint="1.0" idrag="0.4" />
+	    width="1.0" taper="0.0" midpoint="1.0" idrag="0.2" />
 
   <!-- Under engine -->
   <fuselage ax="1.5" ay="0" az="-0.6" bx="0.2" by="0" bz="-0.6"
-	    width="1.0" taper="0.0" midpoint="0.0" idrag="0.4" />
+	    width="1.0" taper="0.0" midpoint="0.0" idrag="0.2" />
 
   <!-- Engine -->
   <fuselage ax="0.9" ay="0" az="0.3" bx="0.2" by="0" bz="0.3"
-	    width="0.6" taper="0.8" midpoint="0.5" idrag="0.4" />
+	    width="0.6" taper="0.8" midpoint="0.5" idrag="0.2" />
 
   <!-- Tail boom -->
   <fuselage ax="0.4" ay="0" az="-0.8" bx="-1.2" by="0" bz="0.6"
-	    width="0.4" taper="0.1" midpoint="0.0" idrag="0.4" />
+	    width="0.4" taper="0.1" midpoint="0.0" idrag="0.2" />
 
   <!-- WING -->
 
@@ -109,7 +109,7 @@
     <actionpt x="0.06" y="0" z="0.328" />
 
     <piston-engine eng-rpm="5800" alt="0" eng-power="100"
-		   displacement="73.91" compression="9" />
+		   displacement="82.6" compression="10.5" />
 
     <control-input axis="/controls/engines/engine[0]/throttle" control="THROTTLE" />
     <control-input axis="/controls/engines/engine[0]/starter" control="STARTER" />
@@ -213,8 +213,8 @@
   <ballast x="1.0" y="0" z="-0.2" mass="100" />
 
   <!-- Left/right ballast (to prevent tipping) -->
-  <ballast x="-0.8" y="0.7" z="0.0" mass="300" />
-  <ballast x="-0.8" y="-0.7" z="0.0" mass="300" />
+  <ballast x="-0.9" y="0.7" z="0.0" mass="300" />
+  <ballast x="-0.9" y="-0.7" z="0.0" mass="300" />
 
   <!-- WEIGHT -->
 

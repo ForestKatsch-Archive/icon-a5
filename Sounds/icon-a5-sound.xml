@@ -3,6 +3,7 @@
 <PropertyList>
 
   <fx>
+
     <engine>
       <name>engine</name>
       <mode>looped</mode>
@@ -61,7 +62,7 @@
     <gear>
       <name>gear</name>
       <mode>in-transit</mode>
-      <path>Aircraft/icon-a5/Sounds/gear.wav</path>
+      <path>Aircraft/icon-a5/Sounds/motor.wav</path>
       <property>gear/gear[8]/position-norm</property>
       <volume>
 	<property>sim/current-view/internal</property>
@@ -69,6 +70,23 @@
 	<offset>1.3</offset>
       </volume>
     </gear>
+
+    <bilge>
+      <name>bilge pump</name>
+      <mode>looped</mode>
+      <path>Aircraft/icon-a5/Sounds/motor.wav</path>
+      <condition>
+	<equals>
+	  <property>electrical/devices/bilge</property>
+	  <value>on</value>
+	</equals>
+      </condition>
+      <volume>
+	<property>sim/current-view/internal</property>
+	<factor>0.1</factor>
+	<offset>0.025</offset>
+      </volume>
+    </bilge>
 
   </fx>
   

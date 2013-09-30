@@ -6,86 +6,127 @@
   <texture-path>./textures/cockpit</texture-path>
 
   <animation>
-    <name>interior</name>
-    <object-name>dashboard</object-name>
-    <object-name>instrument cluster</object-name>
-    <object-name>instrument cluster covers</object-name>
-    <object-name>outer instrument cluster</object-name>
-    <object-name>engine cluster</object-name>
-    <object-name>lower instrument cluster</object-name>
-    <object-name>glovebox</object-name>
-    <object-name>altimeter 100 needle</object-name>
-    <object-name>altimeter 1000 needle</object-name>
-    <object-name>airspeed needle</object-name>
-    <object-name>aoa needle</object-name>
-    <object-name>fuel needle</object-name>
-    <object-name>tachometer needle</object-name>
-    <object-name>oil temp needle</object-name>
-    <object-name>oil pressure needle</object-name>
-    <object-name>cylinder head temp needle</object-name>
-    <object-name>airspeed legend</object-name>
-    <object-name>altimeter legend</object-name>
-    <object-name>aoa legend</object-name>
-    <object-name>fuel legend</object-name>
-    <object-name>tachometer legend</object-name>
-    <object-name>altimeter knob</object-name>
-    <object-name>altimeter knob case</object-name>
-    <object-name>needle hubs</object-name>
-    <object-name>walls</object-name>
-    <object-name>inside windshield</object-name>
-    <object-name>gear switch</object-name>
-    <object-name>gps display</object-name>
-    <object-name>center console switch trim</object-name>
-    <object-name>display glare shield</object-name>
-    <object-name>altimeter adjustment legend</object-name> 
- </animation>
-  
-  <animation>
-    <name>cluster</name>
-    <object-name>instrument cluster</object-name>
-    <object-name>outer instrument cluster</object-name>
-    <object-name>engine cluster</object-name>
-    <object-name>lower instrument cluster</object-name>
-    <object-name>altimeter 100 needle</object-name>
-    <object-name>altimeter 1000 needle</object-name>
-    <object-name>airspeed needle</object-name>
-    <object-name>aoa needle</object-name>
-    <object-name>fuel needle</object-name>
-    <object-name>tachometer needle</object-name>
-    <object-name>oil temp needle</object-name>
-    <object-name>oil pressure needle</object-name>
-    <object-name>cylinder head temp needle</object-name>
-    <object-name>airspeed legend</object-name>
-    <object-name>altimeter legend</object-name>
-    <object-name>aoa legend</object-name>
-    <object-name>fuel legend</object-name>
-    <object-name>tachometer legend</object-name>
-    <object-name>altimeter knob</object-name>
-    <object-name>altimeter knob case</object-name>
-    <object-name>needle hubs</object-name>
-  </animation>
-  
-  <animation>
     <name>needles</name>
+
+    <object-name>aoa needle</object-name>
+    <object-name>airspeed needle</object-name>
     <object-name>altimeter 100 needle</object-name>
     <object-name>altimeter 1000 needle</object-name>
-    <object-name>airspeed needle</object-name>
-    <object-name>aoa needle</object-name>
     <object-name>fuel needle</object-name>
     <object-name>tachometer needle</object-name>
     <object-name>oil temp needle</object-name>
     <object-name>oil pressure needle</object-name>
     <object-name>cylinder head temp needle</object-name>
+
   </animation>
 
   <animation>
     <name>legends</name>
+
+    <object-name>aoa legend</object-name>
     <object-name>airspeed legend</object-name>
     <object-name>altimeter legend</object-name>
     <object-name>altimeter adjustment legend</object-name>
-    <object-name>aoa legend</object-name>
     <object-name>fuel legend</object-name>
     <object-name>tachometer legend</object-name>
+
+  </animation>
+
+  <animation>
+    <name>interior</name>
+
+    <object-name>instrument cluster covers</object-name>
+    <object-name>needle hubs</object-name>
+
+    <object-name>aoa legend</object-name>
+    <object-name>aoa needle</object-name>
+
+    <object-name>airspeed legend</object-name>
+    <object-name>airspeed needle</object-name>
+
+    <object-name>altimeter legend</object-name>
+    <object-name>altimeter adjustment legend</object-name> 
+    <object-name>altimeter 100 needle</object-name>
+    <object-name>altimeter 1000 needle</object-name>
+    <object-name>altimeter knob</object-name>
+    <object-name>altimeter knob case</object-name>
+
+    <object-name>fuel legend</object-name>
+    <object-name>fuel needle</object-name>
+
+    <object-name>tachometer legend</object-name>
+    <object-name>tachometer needle</object-name>
+
+    <object-name>oil temp needle</object-name>
+    <object-name>oil pressure needle</object-name>
+    <object-name>cylinder head temp needle</object-name>
+
+    <object-name>walls</object-name>
+    <object-name>inside windshield</object-name>
+
+    <object-name>left window</object-name>
+    <object-name>right window</object-name>
+
+    <object-name>dashboard</object-name>
+
+    <object-name>gps display</object-name>
+    <object-name>display glare shield</object-name>
+
+    <object-name>center console switch trim</object-name>
+
+    <object-name>gear switch</object-name>
+
+    <object-name>middle console</object-name>
+
+    <object-name>communications trim</object-name>
+    <object-name>communications bezel</object-name>
+
+    <object-name>radio display</object-name>
+    <object-name>radio buttons</object-name>
+
+    <object-name>transponder display</object-name>
+    <object-name>transponder buttons</object-name>
+
+    <object-name>headlights switch</object-name>
+    <object-name>headlights switch light</object-name>
+
+    <object-name>taxi light switch</object-name>
+    <object-name>taxi light switch light</object-name>
+
+    <object-name>seawings lights switch</object-name>
+    <object-name>seawings lights switch light</object-name>
+
+    <object-name>bilge pump switch</object-name>
+    <object-name>bilge pump switch light</object-name>
+
+    <object-name>throttle cover plate</object-name>
+    <object-name>throttle lever</object-name>
+
+    <object-name>left seat base</object-name>
+  </animation>
+
+  <animation>
+    <name>headlights-switch</name>
+    <object-name>headlights switch</object-name>
+    <object-name>headlights switch light</object-name>
+  </animation>
+
+  <animation>
+    <name>taxi-light-switch</name>
+    <object-name>taxi light switch</object-name>
+    <object-name>taxi light switch light</object-name>
+  </animation>
+
+  <animation>
+    <name>seawings-light-switch</name>
+    <object-name>seawings light switch</object-name>
+    <object-name>seawings light switch light</object-name>
+  </animation>
+
+  <animation>
+    <name>bilge-pump-switch</name>
+    <object-name>bilge pump switch</object-name>
+    <object-name>bilge pump switch light</object-name>
   </animation>
 
   <animation>
@@ -145,7 +186,7 @@
   <animation>
     <type>rotate</type>
     <object-name>airspeed needle</object-name>
-    <property>velocities/airspeed-kt</property>
+    <property>instrumentation/airspeed-indicator/indicated-speed-kt</property>
     <interpolation>
       <entry>
 	<ind> 0</ind>
@@ -347,16 +388,10 @@
       <binding>
 	<command>property-adjust</command>
 	<property>instrumentation/altimeter/setting-inhg</property>
-	<factor>0.025</factor>
+	<factor>0.01</factor>
 	<min>24.0</min>
 	<max>34.0</max>                
 	<wrap>false</wrap>
-      </binding>
-      <binding>
-	<command>set-tooltip</command>
-	<tooltip-id>altimeter-setting</tooltip-id>
-	<label>Altimeter inHg: %5.2f</label>
-	<property>instrumentation/altimeter/setting-inhg</property>
       </binding>
     </action>
 
@@ -366,6 +401,358 @@
 	<tooltip-id>altimeter-setting</tooltip-id>
 	<label>Altimeter inHg: %5.2f</label>
 	<property>instrumentation/altimeter/setting-inhg</property>
+      </binding>
+    </hovered>
+
+  </animation>
+
+  <!-- CENTER CONSOLE-->
+
+  <!-- Gear switch -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>gear switch</object-name>
+    <property>controls/gear/gear-down</property>
+    <factor>50</factor>
+    <center>
+      <x-m>-2.06003</x-m>
+      <y-m>-0.02</y-m>
+      <z-m>-0.4067583</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>gear switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/gear/gear-down</property>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <label>Gear is %s</label>
+        <measure-text>Gear is down</measure-text>
+        <tooltip-id>gear</tooltip-id>
+        <property>controls/gear/gear-down</property>
+	<mapping>nasal</mapping>
+	<script>
+	  if(arg[0] == 1)
+            return "down";
+          return "up";
+	</script>
+      </binding>
+    </hovered>
+  </animation>
+
+  <!-- Headlights switch -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>headlights-switch</object-name>
+    <property>controls/lights/headlights</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>-2.065</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>-0.364</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>headlights switch light</object-name>
+    <condition>
+      <equals>
+	<property>electrical/lights/headlights/status</property>
+	<value>on</value>
+      </equals>
+    </condition>
+    <emission>
+      <red>0.1</red>
+      <green>0.5</green>
+      <blue>0.1</blue>
+    </emission> 
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>headlights-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/switches/headlights</property>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <label>Headlights %s</label>
+        <measure-text>Headlights off</measure-text>
+        <tooltip-id>headlights</tooltip-id>
+	<property>controls/switches/headlights</property>
+	<mapping>nasal</mapping>
+	<script>
+	  if(arg[0] == 1)
+            return "on";
+          return "off";
+	</script>
+      </binding>
+    </hovered>
+  </animation>
+
+  <!-- Taxi light switch -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>taxi-light-switch</object-name>
+    <property>controls/switches/taxi</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>-2.065</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>-0.364</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>taxi light switch light</object-name>
+    <condition>
+      <equals>
+	<property>electrical/lights/taxi/status</property>
+	<value>on</value>
+      </equals>
+    </condition>
+    <emission>
+      <red>0.1</red>
+      <green>0.5</green>
+      <blue>0.1</blue>
+    </emission> 
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>taxi-light-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/switches/taxi</property>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <label>Taxi lights %s</label>
+        <measure-text>Taxi lights off</measure-text>
+        <tooltip-id>taxi-lights</tooltip-id>
+        <property>controls/switches/taxi</property>
+	<mapping>nasal</mapping>
+	<script>
+	  if(arg[0] == 1)
+            return "on";
+          return "off";
+	</script>
+      </binding>
+    </hovered>
+  </animation>
+
+  <!-- Seawings light switch -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>seawings-light-switch</object-name>
+    <property>controls/switches/seawings</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>-2.065</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>-0.364</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>seawings light switch light</object-name>
+    <condition>
+      <equals>
+	<property>electrical/lights/seawings/status</property>
+	<value>on</value>
+      </equals>
+    </condition>
+    <emission>
+      <red>0.1</red>
+      <green>0.5</green>
+      <blue>0.1</blue>
+    </emission> 
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>seawings-light-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/switches/seawings</property>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <label>Seawings lights %s</label>
+        <measure-text>Seawings lights off</measure-text>
+        <tooltip-id>seawings-lights</tooltip-id>
+        <property>controls/switches/seawings</property>
+	<mapping>nasal</mapping>
+	<script>
+	  if(arg[0] == 1)
+            return "on";
+          return "off";
+	</script>
+      </binding>
+    </hovered>
+  </animation>
+
+  <!-- Bilge pump switch -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>bilge-pump-switch</object-name>
+    <property>controls/pumps/bilge</property>
+    <factor>-20</factor>
+    <center>
+      <x-m>-2.065</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>-0.364</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>material</type>
+    <object-name>bilge pump switch light</object-name>
+    <condition>
+      <equals>
+	<property>electrical/devices/bilge</property>
+	<value>on</value>
+      </equals>
+    </condition>
+    <emission>
+      <red>0.1</red>
+      <green>0.5</green>
+      <blue>0.1</blue>
+    </emission> 
+  </animation>
+
+  <animation>
+    <type>pick</type>
+    <object-name>bilge-pump-switch</object-name>
+    <action>
+      <button>0</button>
+      <repeatable>false</repeatable>
+      <binding>
+	<command>property-toggle</command>
+	<property>controls/pumps/bilge</property>
+      </binding>
+    </action>
+    <hovered>
+      <binding>
+        <command>set-tooltip</command>
+        <label>Bilge pump %s</label>
+        <measure-text>Bilge pump off</measure-text>
+        <tooltip-id>bilges</tooltip-id>
+        <property>controls/pumps/bilge</property>
+	<mapping>nasal</mapping>
+	<script>
+	  if(arg[0] == 1)
+            return "on";
+          return "off";
+	</script>
+      </binding>
+    </hovered>
+  </animation>
+  
+  <!-- THROTTLE -->
+
+  <animation>
+    <type>knob</type>
+    <object-name>throttle lever</object-name>
+    <property>controls/engines/engine/throttle</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>1</ind>
+	<dep>-60</dep>
+      </entry>
+    </interpolation>
+    <drag-direction>vertical</drag-direction>
+    <center>
+      <x-m>-1.9</x-m>
+      <y-m> 0.0</y-m>
+      <z-m>-0.56</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>controls/engines/engine/throttle</property>
+	<factor>0.05</factor>
+	<min>0.0</min>
+	<max>1.0</max>                
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<tooltip-id>throttle</tooltip-id>
+	<label>Throttle: %3f%%</label>
+	<mapping>percent</mapping>
+	<property>controls/engines/engine/throttle</property>
       </binding>
     </hovered>
 
