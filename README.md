@@ -2,6 +2,11 @@
 
 Currently in development.
 
+## Startup procedure
+
+1. Click the red switch on the lower left part of the dashboard (master switch).
+2. Drag the key all the way to the right. Unfortunately, keyboard shortcuts do not work at this time.
+
 ## Features
 
 ### Cockpit
@@ -12,12 +17,15 @@ Currently in development.
 * Fuel gauge
 * Tachometer
 * Gear switch
+* Throttle
+* Key and master switch
+* Very basic electrical system
 
 ###  Exterior
 
 * Basic exterior model
 * Control surface movement
-* Landing gear and floats
+* Landing gear and floats (do not land on water with gear extended!!!)
 
 ### Not included (but on todo list)
 

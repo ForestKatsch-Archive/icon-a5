@@ -46,6 +46,9 @@
       <max-lb>60</max-lb>
     </weight>
 
+    <systems include="Systems/electrical.xml">
+    </systems>
+
   </sim>
 
   <consumables>
@@ -59,67 +62,27 @@
     </fuel>
   </consumables>
 
-  <electrical>
-    <path></path>
-    <devices>
-      <avionics>
-	<status type="string">off</status>
-	<current type="double">0.0</current> <!-- Amps pulled at the moment; if status isn't on this==0 -->
-	<max-current type="double">10.0</max-current> <!-- max amps (will instantly trip after this) -->
-      </avionics>
-      <bilge> <!-- "misc" -->
-	<status type="string">off</status>
-	<current type="double">20.0</current>
-	<max-current type="double">5.0</max-current>
-      </bilge>
-      <hydraulic> <!-- pump -->
-	<status type="string">off</status>
-	<current type="double">25.0</current>
-	<max-current type="double">30.0</max-current>
-      </hydraulic>
-      <lights>
-	<status type="string">off</status>
-	<current type="double">10.0</current>
-	<max-current type="double">15.0</max-current>
-      </lights>
-    </devices>
-    <lights>
-      <seawings>
-	<status type="string">off</status>
-	<current type="double">1</current> <!-- Amps pulled when on -->
-      </seawings>
-      <headlights>
-	<status type="string">off</status>
-	<current type="double">10</current> <!-- Amps pulled when on -->
-      </headlights>
-      <taxi>
-	<status type="string">off</status>
-	<current type="double">2</current> <!-- Amps pulled when on -->
-      </taxi>
-      <cockpit>
-	<status type="string">off</status>
-	<current type="double">1</current> <!-- Amps pulled when on -->
-      </cockpit>
-    </lights>
-  </electrical>
-
   <controls>
+    <key type="int">0</key>
     <gear>
       <brake-parking type="double">1</brake-parking>
+      <gear-down-actual type="bool">true</gear-down-actual>
     </gear>
     <switches>
       <seawings type="int">0</seawings>
       <headlights type="int">0</headlights>
       <taxi type="int">0</taxi>
-      <cockpit type="int">0</cockpit>
+      <cockpit type="int">1</cockpit>
       <bilge type="int">0</bilge>
+      <master type="int">0</master>
     </switches>
   </controls>
 
   <nasal>
-    <electrical>
+    <a5>
       <file>Aircraft/icon-a5/Nasal/electrical.nas</file>
-    </electrical>
+      <file>Aircraft/icon-a5/Nasal/misc.nas</file>
+    </a5>
   </nasal>
 
 </PropertyList>

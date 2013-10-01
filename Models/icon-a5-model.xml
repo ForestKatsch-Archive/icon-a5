@@ -77,13 +77,9 @@
     <property>orientation/roll-deg</property>
     <condition>
       <and>
-	<less-than>
-	  <property>position/altitude-agl-ft</property>
-	  <value>100</value>
-	</less-than>
-	<not>
-	  <property>gear/gear[2]/wow</property>
-	</not>
+	<property>gear/gear[8]/wow</property>
+	<property>gear/gear[9]/wow</property>
+	<property>gear/gear[10]/wow</property>
       </and>
     </condition>
     <axis>
@@ -99,13 +95,9 @@
     <property>orientation/pitch-deg</property>
     <condition>
       <and>
-	<less-than>
-	  <property>position/altitude-agl-ft</property>
-	  <value>100</value>
-	</less-than>
-	<not>
-	  <property>gear/gear[2]/wow</property>
-	</not>
+	<property>gear/gear[8]/wow</property>
+	<property>gear/gear[9]/wow</property>
+	<property>gear/gear[10]/wow</property>
       </and>
     </condition>
     <axis>
@@ -603,7 +595,7 @@
       <blue>0.1</blue>
     </emission>
     <condition>
-      <property>controls/lights/seawings</property>
+      <property>electrical/devices/seawings</property>
     </condition>
   </animation>
 
@@ -616,7 +608,7 @@
       <blue>0.1</blue>
     </emission>
     <condition>
-      <property>controls/lights/seawings</property>
+      <property>electrical/devices/seawings</property>
     </condition>
   </animation>
 

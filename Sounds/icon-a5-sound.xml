@@ -76,10 +76,7 @@
       <mode>looped</mode>
       <path>Aircraft/icon-a5/Sounds/motor.wav</path>
       <condition>
-	<equals>
-	  <property>electrical/devices/bilge</property>
-	  <value>on</value>
-	</equals>
+	<property>systems/electrical/outputs/bilge</property>
       </condition>
       <volume>
 	<property>sim/current-view/internal</property>

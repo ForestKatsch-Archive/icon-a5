@@ -1,0 +1,106 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+
+  <electrical>
+
+    <path></path> <!-- Important: clear the path to disable the default Flightgear system -->
+
+    <component>
+      <kind type="string">battery</kind>
+      <name type="string">Battery</name>
+      <volts type="float">12</volts>
+      <prop type="string">/systems/electrical/suppliers/battery[0]</prop>
+    </component>
+
+    <component>
+      <kind type="string">alternator</kind>
+      <name type="string">Alternator</name>
+      <volts type="float">14</volts>
+      <prop type="string">/systems/electrical/suppliers/alternator[0]</prop>
+      <source-prop type="string">/engines/engine[0]/rpm</source-prop>
+      <source-min type="float">600</source-min>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Bilge pump</name>
+      <prop type="string">/systems/electrical/outputs/bilge</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Starter</name>
+      <prop type="string">/systems/electrical/outputs/starter</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Primary bus</name>
+      <prop type="string">/systems/electrical/outputs/primary</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Headlights</name>
+      <prop type="string">/systems/electrical/outputs/headlights</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Cockpit light</name>
+      <prop type="string">/systems/electrical/outputs/cockpit</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Gear</name>
+      <prop type="string">/systems/electrical/outputs/gear</prop>
+    </component>
+
+    <!-- Connectors -->
+
+    <connector>
+      <input type="string">Battery</input>
+      <output type="string">Primary bus</output>
+      <switch type="string">/controls/switches/master</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Alternator</input>
+      <output type="string">Primary bus</output>
+      <switch type="string">/controls/switches/alternator</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Starter</output>
+      <switch type="string">/controls/engines/engine[0]/starter</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Headlights</output>
+      <switch type="string">/controls/switches/headlights</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Bilge pump</output>
+      <switch type="string">/controls/switches/bilge</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Cockpit light</output>
+      <switch type="string">/controls/switches/cockpit</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Gear</output>
+    </connector>
+
+  </electrical>
+
+</PropertyList>
