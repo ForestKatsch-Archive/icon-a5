@@ -90,6 +90,7 @@
   <nasal>
     <a5>
       <file>Aircraft/icon-a5/Nasal/electrical.nas</file>
+      <file>Aircraft/icon-a5/Nasal/util.nas</file>
       <file>Aircraft/icon-a5/Nasal/misc.nas</file>
     </a5>
   </nasal>

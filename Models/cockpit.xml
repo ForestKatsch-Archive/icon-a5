@@ -51,7 +51,7 @@
     <object-name>fuel legend</object-name>
     <object-name>tachometer legend</object-name>
     <object-name>oil temp legend</object-name>
-    <object-name>oil press legend</object-name>
+    <object-name>oil pressure legend</object-name>
     <object-name>cylinder head temp legend</object-name>
 
   </animation>
@@ -335,8 +335,8 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>oil needle</object-name>
-    <property>engines/engine[0]/rpm</property>
+    <object-name>oil temp needle</object-name>
+    <property>engines/engine[0]/oil-temperature-degf</property>
     <interpolation>
       <entry>
 	<ind>0</ind>
@@ -371,8 +371,8 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>oil needle</object-name>
-    <property>engines/engine[0]/rpm</property>
+    <object-name>oil pressure needle</object-name>
+    <property>engines/engine[0]/oil-pressure-psi</property>
     <interpolation>
       <entry>
 	<ind>0</ind>
