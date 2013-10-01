@@ -5,7 +5,7 @@ Currently in development.
 ## Startup procedure
 
 1. Click the red switch on the lower left part of the dashboard (master switch).
-2. Drag the key all the way to the right. Unfortunately, keyboard shortcuts do not work at this time.
+2. Drag the key all the way to the right.
 
 ## Features
 
@@ -23,6 +23,8 @@ Currently in development.
 
 ###  Exterior
 
+* Headlights
+* "Seawings" lights (navigation)
 * Basic exterior model
 * Control surface movement
 * Landing gear and floats (do not land on water with gear extended!!!)
