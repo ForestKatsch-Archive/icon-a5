@@ -1,0 +1,110 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <title>Before engine start</title>  
+  <item>
+    <name>Headlights</name>
+    <value>OFF</value>
+    <condition>
+      <equals>
+	<property>/controls/switches/headlights</property>
+	<value>0</value>
+      </equals>
+    </condition>
+    <marker>
+      <x-m>-2.0</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 0.0</z-m>
+      <scale>2.0</scale>
+    </marker>      
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/headlights</property>
+      <value>0</value>
+    </binding>
+  </item>
+  <item>
+    <name>Taxi lights</name>
+    <value>OFF</value>
+    <condition>
+      <equals>
+	<property>/controls/switches/taxi</property>
+	<value>0</value>
+      </equals>
+    </condition>
+    <marker>
+      <x-m>-2.0</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 0.0</z-m>
+      <scale>2.0</scale>
+    </marker>      
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/taxi</property>
+      <value>0</value>
+    </binding>
+  </item>
+  <item>
+    <name>Seawings lights</name>
+    <value>OFF</value>
+    <condition>
+      <equals>
+	<property>/controls/switches/seawings</property>
+	<value>0</value>
+      </equals>
+    </condition>
+    <marker>
+      <x-m>-2.0</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 0.0</z-m>
+      <scale>2.0</scale>
+    </marker>      
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/seawings</property>
+      <value>0</value>
+    </binding>
+  </item>
+  <item>
+    <name>Bilge pump</name>
+    <value>OFF</value>
+    <condition>
+      <equals>
+	<property>/controls/switches/bilge</property>
+	<value>0</value>
+      </equals>
+    </condition>
+    <marker>
+      <x-m>-2.0</x-m>
+      <y-m> 0.0</y-m>
+      <z-m> 0.0</z-m>
+      <scale>2.0</scale>
+    </marker>      
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/bilge</property>
+      <value>0</value>
+    </binding>
+  </item>
+  <item>
+    <name>Master switch</name>
+    <value>ON</value>
+    <condition>
+      <equals>
+	<property>/controls/switches/master</property>
+	<value>1</value>
+      </equals>
+    </condition>
+    <marker>
+      <x-m>-0.3225</x-m>
+      <y-m>-0.0850</y-m>
+      <z-m>-0.2117</z-m>
+      <scale>2.0500</scale>
+    </marker>      
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/master</property>
+      <value>1</value>
+    </binding>
+  </item>
+</PropertyList>

@@ -135,35 +135,6 @@
 
   <animation>
     <name>exterior</name>
-    <object-name>prop disc</object-name>
-    <object-name>prop blades</object-name>
-    <object-name>spinner</object-name>
-    <object-name>windshield</object-name>
-    <object-name>left window</object-name>
-    <object-name>right window</object-name>
-    <object-name>side windows</object-name>
-    <object-name>fuselage</object-name>
-    <object-name>left wing</object-name>
-    <object-name>left wing</object-name>
-    <object-name>left aileron</object-name>
-    <object-name>right aileron</object-name>
-    <object-name>wing struts</object-name>
-    <object-name>horizontal stabilizer</object-name>
-    <object-name>rudder</object-name>
-    <object-name>water rudder</object-name>
-    <object-name>fuel cap</object-name>
-    <object-name>headlights</object-name>
-    <object-name>canopy frame</object-name>
-    <object-name>cockpit walls</object-name>
-    <object-name>left gear</object-name>
-    <object-name>right gear</object-name>
-    <object-name>nose gear</object-name>
-    <object-name>left tire</object-name>
-    <object-name>right tire</object-name>
-    <object-name>nose tire</object-name>
-    <object-name>shadow</object-name>
-    <object-name>right seawings light</object-name>
-    <object-name>left seawings light</object-name>
   </animation>
 
   <!-- Hide exterior if inside -->
@@ -184,6 +155,60 @@
 	<property>sim/current-view/internal</property>
       </not>
     </condition>
+  </animation>
+
+  <!-- Headlights -->
+
+  <animation>
+    <type>select</type>
+    <object-name>headlights cone</object-name>
+    <object-name>left headlight glow</object-name>
+    <object-name>right headlight glow</object-name>
+    <condition>
+      <property>systems/electrical/outputs/headlights</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>left headlight glow</object-name>
+    <offset>0.0</offset>
+    <factor>1.0</factor>
+    <power>2</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-3.7457</x-m>
+      <y-m> 0.2695</y-m>
+      <z-m>-0.55</z-m>
+    </center>
+    <axis>
+      <x>-0.7</x>
+      <y>-0.3</y>
+      <z> 0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>right headlight glow</object-name>
+    <offset>0.0</offset>
+    <factor>1.0</factor>
+    <power>2</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-3.7457</x-m>
+      <y-m>-0.2695</y-m>
+      <z-m>-0.55</z-m>
+    </center>
+    <axis>
+      <x>-0.3</x>
+      <y> 0.7</y>
+      <z> 0.0</z>
+    </axis>
   </animation>
 
   <!-- Propeller -->
@@ -595,7 +620,7 @@
       <blue>0.1</blue>
     </emission>
     <condition>
-      <property>electrical/devices/seawings</property>
+      <property>systems/electrical/outputs/seawings</property>
     </condition>
   </animation>
 
@@ -608,7 +633,58 @@
       <blue>0.1</blue>
     </emission>
     <condition>
-      <property>electrical/devices/seawings</property>
+      <property>systems/electrical/outputs/seawings</property>
+    </condition>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>left seawings glow</object-name>
+    <offset>0.0</offset>
+    <factor>1.0</factor>
+    <power>2</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-1.3</x-m>
+      <y-m>-5.01</y-m>
+      <z-m> 0.3</z-m>
+    </center>
+    <axis>
+      <x> 0.0</x>
+      <y>-1.0</y>
+      <z> 0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>flash</type>
+    <object-name>right seawings glow</object-name>
+    <offset>0.0</offset>
+    <factor>1.0</factor>
+    <power>2</power>
+    <two-sides type="bool">false</two-sides>
+    <min>0.0</min>
+    <max>1.0</max>
+    <center>
+      <x-m>-1.3</x-m>
+      <y-m> 5.01</y-m>
+      <z-m> 0.3</z-m>
+    </center>
+    <axis>
+      <x> 0.0</x>
+      <y> 1.0</y>
+      <z> 0.0</z>
+    </axis>
+  </animation>
+
+  <animation>
+    <type>select</type>
+    <object-name>left seawings glow</object-name>
+    <object-name>right seawings glow</object-name>
+    <condition>
+      <property>systems/electrical/outputs/seawings</property>
     </condition>
   </animation>
 

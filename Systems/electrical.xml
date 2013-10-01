@@ -24,12 +24,6 @@
 
     <component>
       <kind type="string">output</kind>
-      <name type="string">Bilge pump</name>
-      <prop type="string">/systems/electrical/outputs/bilge</prop>
-    </component>
-
-    <component>
-      <kind type="string">output</kind>
       <name type="string">Starter</name>
       <prop type="string">/systems/electrical/outputs/starter</prop>
     </component>
@@ -42,20 +36,38 @@
 
     <component>
       <kind type="string">output</kind>
+      <name type="string">Gear</name>
+      <prop type="string">/systems/electrical/outputs/gear</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
       <name type="string">Headlights</name>
       <prop type="string">/systems/electrical/outputs/headlights</prop>
     </component>
 
     <component>
       <kind type="string">output</kind>
-      <name type="string">Cockpit light</name>
-      <prop type="string">/systems/electrical/outputs/cockpit</prop>
+      <name type="string">Taxi light</name>
+      <prop type="string">/systems/electrical/outputs/taxi</prop>
     </component>
 
     <component>
       <kind type="string">output</kind>
-      <name type="string">Gear</name>
-      <prop type="string">/systems/electrical/outputs/gear</prop>
+      <name type="string">Seawings light</name>
+      <prop type="string">/systems/electrical/outputs/seawings</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Bilge pump</name>
+      <prop type="string">/systems/electrical/outputs/bilge</prop>
+    </component>
+
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Cockpit light</name>
+      <prop type="string">/systems/electrical/outputs/cockpit</prop>
     </component>
 
     <!-- Connectors -->
@@ -82,6 +94,18 @@
       <input type="string">Primary bus</input>
       <output type="string">Headlights</output>
       <switch type="string">/controls/switches/headlights</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Taxi light</output>
+      <switch type="string">/controls/switches/taxi</switch>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Seawings light</output>
+      <switch type="string">/controls/switches/seawings</switch>
     </connector>
 
     <connector>

@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+
+<PropertyList>
+  <title>Before takeoff</title>  
+  <item>
+    <name>Master switch</name>
+    <value>ON</value>
+    <condition>
+      <equals>
+	<property>/controls/switches/master</property>
+	<value>1</value>
+      </equals>
+    </condition>
+    <marker>
+      <x-m>-0.3225</x-m>
+      <y-m>-0.0850</y-m>
+      <z-m>-0.2117</z-m>
+      <scale>2.0500</scale>
+    </marker>      
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/master</property>
+      <value>1</value>
+    </binding>
+  </item>
+  <item>
+    <name>Master switch</name>
+    <value>ON</value>
+    <condition>
+      <equals>
+	<property>/controls/switches/master</property>
+	<value>1</value>
+      </equals>
+    </condition>
+    <marker>
+      <x-m>-0.3225</x-m>
+      <y-m>-0.0850</y-m>
+      <z-m>-0.2117</z-m>
+      <scale>2.0500</scale>
+    </marker>      
+    <binding>
+      <command>property-assign</command>
+      <property>/controls/switches/master</property>
+      <value>1</value>
+    </binding>
+  </item>
+</PropertyList>

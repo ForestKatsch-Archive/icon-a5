@@ -42,9 +42,9 @@
 
   <!-- Outboard -->
   <wing x="0.96" y="3.1" z="0.328" taper="0.6"
-	length="2" chord="1.8" incidence="1" twist="1"
+	length="2" chord="1.9" incidence="1" twist="1"
 	sweep="0" dihedral="5" camber="0.1">
-    <stall aoa="20" width="5.0" peak="1.5" />
+    <stall aoa="25" width="5.0" peak="1.5" />
 
     <flap0 start="0" end="0.95" lift="1.4" drag="1.0" />
 
@@ -59,9 +59,9 @@
 
   <!-- Inboard -->
   <mstab x="0.9" y="0.6" z="0.328" taper="0.1"
-	 length="2.5" chord="1.55" incidence="1" twist="0"
+	 length="2.5" chord="1.6" incidence="1" twist="0"
 	 sweep="0" dihedral="0" camber="0.1">
-    <stall aoa="14" width="1.0" peak="1.5" />
+    <stall aoa="12" width="1.0" peak="1.5" />
   </mstab>
 
   <!-- Platform -->
@@ -69,16 +69,20 @@
 	 length="0.4" chord="1.0" incidence="0" twist="5"
 	 sweep="10" dihedral="1" camber="0.1">
     <stall aoa="15" width="3.0" peak="1.5" />
+
+    <flap0 start="0" end="0.95" lift="0.9" drag="1.5" />
+
+    <control-input axis="/gear/gear[8]/position-norm" control="FLAP0" />
   </mstab>
 
   <!-- HORIZONTAL STABILIZER -->
 
   <hstab x="-2.4" y="0.0" z="0.86"
 	 length="1.5" chord="0.9" sweep="5" taper="0.5"
-	 effectiveness="2" incidence="1">
-    <stall aoa="20" width="10" peak="1.5" />
+	 effectiveness="2.0" incidence="1">
+    <stall aoa="15" width="10" peak="1.5" />
 
-    <flap0 start="0" end="0.9" lift="1.45" drag="1.2" />
+    <flap0 start="0" end="0.9" lift="1.3" drag="1.2" />
 
     <control-input axis="/controls/flight/elevator" control="FLAP0" />
     <control-input axis="/controls/flight/elevator-trim" control="FLAP0" />
@@ -88,7 +92,8 @@
   <!-- VERTICAL STABILIZER -->
 
   <vstab x="-1.6" y="0.0" z="-0.3"
-	 length="1.4" chord="1.0" sweep="5" taper="0.7">
+	 length="1.5" chord="1.5" sweep="5" taper="0.7">
+
     <stall aoa="10" width="10" peak="1.5" />
 
     <flap0 start="0.1" end="0.9" lift="1.5" drag="1.2" />
@@ -204,27 +209,27 @@
     <control-input axis="/controls/gear/brake-parking" control="BRAKE"/>
   </gear>
   
-  <!-- Land landing gear on water -->
+  <!-- Landing gear on water -->
 
   <!-- Nose [11] -->
-  <gear x="2.9047" y="0.0" z="-1.212" compression="0.1" spring="1.5"
-	on-water="1" on-ground="0" dfric="1" sfric="1">
+  <gear x="2.9047" y="0.0" z="-1.1" compression="0.1" spring="1.5"
+	on-water="1" on-ground="0" dfric="1" sfric="1" ignored-by-solver="1">
     <control-input axis="/controls/gear/gear-down-actual" control="EXTEND"/>
     <control-output control="EXTEND" prop="/gear/gear[11]/position-norm"/>
     <control-speed control="EXTEND" transition-time="3"/>
   </gear>
 
   <!-- Left [12] -->
-  <gear x="-0.49465" y="0.9529" z="-1.3078" compression="0.15" spring="2.0"
-	on-water="1" on-ground="0" dfric="1" sfric="1">
+  <gear x="-0.49465" y="0.9529" z="-1.2" compression="0.15" spring="2.0"
+	on-water="1" on-ground="0" dfric="1" sfric="1" ignored-by-solver="1">
     <control-input axis="/controls/gear/gear-down-actual" control="EXTEND"/>
     <control-output control="EXTEND" prop="/gear/gear[12]/position-norm"/>
     <control-speed control="EXTEND" transition-time="3"/>
   </gear>
 
   <!-- Right [13] -->
-  <gear x="-0.49465" y="-0.9529" z="-1.3078" compression="0.15" spring="2.0"
-	on-water="1" on-ground="0" dfric="1" sfric="1">
+  <gear x="-0.49465" y="-0.9529" z="-1.2" compression="0.15" spring="2.0"
+	on-water="1" on-ground="0" dfric="1" sfric="1" ignored-by-solver="1">
     <control-input axis="/controls/gear/gear-down-actual" control="EXTEND"/>
     <control-output control="EXTEND" prop="/gear/gear[13]/position-norm"/>
     <control-speed control="EXTEND" transition-time="3"/>

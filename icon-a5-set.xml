@@ -3,6 +3,7 @@
 <PropertyList>
 
   <sim> 
+    <checklists include="Tutorials/checklists.xml"/>
     <description>Icon A5</description>
     <author>Forest Ka</author>
 
@@ -87,11 +88,22 @@
     </switches>
   </controls>
 
+  <limits>
+    <vne>120</vne>
+    
+    <max-gear-extension-speed>120</max-gear-extension-speed>
+    
+    <max-positive-g>3.0</max-positive-g>
+    <max-negative-g>-0.5</max-negative-g>
+    
+  </limits>
+
   <nasal>
     <a5>
       <file>Aircraft/icon-a5/Nasal/electrical.nas</file>
       <file>Aircraft/icon-a5/Nasal/util.nas</file>
       <file>Aircraft/icon-a5/Nasal/misc.nas</file>
+      <file>Aircraft/Generic/limits.nas</file>
     </a5>
   </nasal>
 
