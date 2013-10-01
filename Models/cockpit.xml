@@ -5,6 +5,27 @@
   <path>Models/cockpit.ac</path>
   <texture-path>./textures/cockpit</texture-path>
 
+  <!-- Radio -->
+
+  <model>
+    <name>radio</name>
+    <path>Aircraft/icon-a5/Models/Instruments/radio.xml</path>
+    <offsets>
+      <pitch-deg>0</pitch-deg>   
+      <heading-deg>180</heading-deg>
+      <roll-deg>0</roll-deg>
+      <x-m>-2.0702</x-m>
+      <y-m>-0.05</y-m>
+      <z-m>-0.298264</z-m>
+    </offsets>
+  </model>
+
+  <!-- Object groups-->
+
+  <animation>
+    <name>interior</name>
+  </animation>
+
   <animation>
     <name>needles</name>
 
@@ -29,81 +50,13 @@
     <object-name>altimeter adjustment legend</object-name>
     <object-name>fuel legend</object-name>
     <object-name>tachometer legend</object-name>
+    <object-name>oil temp legend</object-name>
+    <object-name>oil press legend</object-name>
+    <object-name>cylinder head temp legend</object-name>
 
   </animation>
 
-  <animation>
-    <name>interior</name>
-
-    <!-- <object-name>instrument cluster covers</object-name> -->
-    <!-- <object-name>needle hubs</object-name> -->
-
-    <!-- <object-name>aoa legend</object-name> -->
-    <!-- <object-name>aoa needle</object-name> -->
-
-    <!-- <object-name>airspeed legend</object-name> -->
-    <!-- <object-name>airspeed needle</object-name> -->
-
-    <!-- <object-name>altimeter legend</object-name> -->
-    <!-- <object-name>altimeter adjustment legend</object-name>  -->
-    <!-- <object-name>altimeter 100 needle</object-name> -->
-    <!-- <object-name>altimeter 1000 needle</object-name> -->
-    <!-- <object-name>altimeter knob</object-name> -->
-    <!-- <object-name>altimeter knob case</object-name> -->
-
-    <!-- <object-name>fuel legend</object-name> -->
-    <!-- <object-name>fuel needle</object-name> -->
-
-    <!-- <object-name>tachometer legend</object-name> -->
-    <!-- <object-name>tachometer needle</object-name> -->
-
-    <!-- <object-name>oil temp needle</object-name> -->
-    <!-- <object-name>oil pressure needle</object-name> -->
-    <!-- <object-name>cylinder head temp needle</object-name> -->
-
-    <!-- <object-name>walls</object-name> -->
-    <!-- <object-name>inside windshield</object-name> -->
-
-    <!-- <object-name>left window</object-name> -->
-    <!-- <object-name>right window</object-name> -->
-
-    <!-- <object-name>dashboard</object-name> -->
-
-    <!-- <object-name>gps display</object-name> -->
-    <!-- <object-name>display glare shield</object-name> -->
-
-    <!-- <object-name>center console switch trim</object-name> -->
-
-    <!-- <object-name>gear switch</object-name> -->
-
-    <!-- <object-name>middle console</object-name> -->
-
-    <!-- <object-name>communications trim</object-name> -->
-    <!-- <object-name>communications bezel</object-name> -->
-
-    <!-- <object-name>radio display</object-name> -->
-    <!-- <object-name>radio buttons</object-name> -->
-
-    <!-- <object-name>transponder display</object-name> -->
-    <!-- <object-name>transponder buttons</object-name> -->
-
-    <!-- <object-name>headlights switch</object-name> -->
-    <!-- <object-name>headlights switch light</object-name> -->
-
-    <!-- <object-name>taxi light switch</object-name> -->
-    <!-- <object-name>taxi light switch light</object-name> -->
-
-    <!-- <object-name>seawings lights switch</object-name> -->
-    <!-- <object-name>seawings lights switch light</object-name> -->
-
-    <!-- <object-name>bilge pump switch</object-name> -->
-    <!-- <object-name>bilge pump switch light</object-name> -->
-
-    <!-- <object-name>throttle cover plate</object-name> -->
-    <!-- <object-name>throttle lever</object-name> -->
-
-    <!-- <object-name>left seat base</object-name> -->
-  </animation>
+  <!-- Switches -->
 
   <animation>
     <name>headlights-switch</name>
@@ -129,6 +82,8 @@
     <object-name>bilge pump switch light</object-name>
   </animation>
 
+  <!-- Hide things when inside -->
+
   <animation>
     <type>select</type>
     <object-name>interior</object-name>
@@ -144,6 +99,8 @@
     <object-name>instrument cluster covers</object-name>
     <object-name>inside windshield</object-name>
   </animation>
+
+  <!-- COCKPIT LIGHTING -->
 
   <!-- All needles glow -->
 
@@ -189,6 +146,40 @@
   <!--     <blue>0.4</blue> -->
   <!--   </emission>  -->
   <!-- </animation> -->
+
+  <!-- MAIN GAUGES -->
+
+  <!-- AOA -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>aoa needle</object-name>
+    <property>orientation/alpha-deg</property>
+    <interpolation>
+      <entry>
+	<ind>-6</ind>
+	<dep>25</dep>
+      </entry>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>15</ind>
+	<dep>-50</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.1538</x-m>
+      <y-m>-0.286</y-m>
+      <z-m>-0.171732</z-m>
+    </center>
+    <axis>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
+    </axis>
+  </animation>
 
   <!-- Airspeed -->
 
@@ -284,38 +275,6 @@
     </axis>
   </animation>
 
-  <!-- AOA -->
-
-  <animation>
-    <type>rotate</type>
-    <object-name>aoa needle</object-name>
-    <property>orientation/alpha-deg</property>
-    <interpolation>
-      <entry>
-	<ind>-6</ind>
-	<dep>25</dep>
-      </entry>
-      <entry>
-	<ind>0</ind>
-	<dep>0</dep>
-      </entry>
-      <entry>
-	<ind>15</ind>
-	<dep>-50</dep>
-      </entry>
-    </interpolation>
-    <center>
-      <x-m>-2.1538</x-m>
-      <y-m>-0.286</y-m>
-      <z-m>-0.171732</z-m>
-    </center>
-    <axis>
-      <x>0.9275984563424636</x>
-      <y>0</y>
-      <z>0.07240154365753637</z>
-    </axis>
-  </animation>
-
   <!-- Fuel -->
 
   <animation>
@@ -346,7 +305,6 @@
 
   <!-- Tachometer -->
 
-
   <animation>
     <type>rotate</type>
     <object-name>tachometer needle</object-name>
@@ -365,6 +323,106 @@
       <x-m>-2.1082</x-m>
       <y-m>-0.166</y-m>
       <z-m>-0.28047</z-m>
+    </center>
+    <axis>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
+    </axis>
+  </animation>
+
+  <!-- Oil temperature -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>oil needle</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>100</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>250</ind>
+	<dep>-215</dep>
+      </entry>
+      <entry>
+	<ind>300</ind>
+	<dep>-245</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.1053</x-m>
+      <y-m>-0.345</y-m>
+      <z-m>-0.308392</z-m>
+    </center>
+    <axis>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
+    </axis>
+  </animation>
+
+  <!-- Oil pressure -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>oil needle</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>100</ind>
+	<dep>-245</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.1053</x-m>
+      <y-m>-0.30</y-m>
+      <z-m>-0.308392</z-m>
+    </center>
+    <axis>
+      <x>0.9275984563424636</x>
+      <y>0</y>
+      <z>0.07240154365753637</z>
+    </axis>
+  </animation>
+
+  <!-- Cylinder head temperature -->
+
+  <animation>
+    <type>rotate</type>
+    <object-name>cylinder head temp needle</object-name>
+    <property>engines/engine[0]/rpm</property>
+    <interpolation>
+      <entry>
+	<ind>0</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>100</ind>
+	<dep>0</dep>
+      </entry>
+      <entry>
+	<ind>250</ind>
+	<dep>-215</dep>
+      </entry>
+      <entry>
+	<ind>300</ind>
+	<dep>-245</dep>
+      </entry>
+    </interpolation>
+    <center>
+      <x-m>-2.1053</x-m>
+      <y-m>-0.255</y-m>
+      <z-m>-0.308392</z-m>
     </center>
     <axis>
       <x>0.9275984563424636</x>

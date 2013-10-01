@@ -6,6 +6,15 @@
     <description>Icon A5</description>
     <author>Forest Ka</author>
 
+    <status>beta</status>
+
+    <rating>
+      <FDM type="int">1</FDM>
+      <systems type="int">3</systems>
+      <cockpit type="int">3</cockpit>
+      <model type="int">3</model>
+    </rating>
+
     <flight-model>yasim</flight-model>
     <aero>icon-a5-yasim</aero>
 
