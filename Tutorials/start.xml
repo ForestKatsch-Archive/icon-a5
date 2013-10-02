@@ -1,47 +1,25 @@
 <?xml version="1.0"?>
 
 <PropertyList>
-  <title>Before takeoff</title>  
+  <title>Engine start</title>  
   <item>
-    <name>Master switch</name>
-    <value>ON</value>
+    <name>Key</name>
+    <value>START</value>
     <condition>
       <equals>
-	<property>/controls/switches/master</property>
+	<property>/engines/engine[0]/running</property>
 	<value>1</value>
       </equals>
     </condition>
-    <marker>
-      <x-m>-0.3225</x-m>
-      <y-m>-0.0850</y-m>
-      <z-m>-0.2117</z-m>
-      <scale>2.0500</scale>
-    </marker>      
     <binding>
-      <command>property-assign</command>
-      <property>/controls/switches/master</property>
-      <value>1</value>
-    </binding>
-  </item>
-  <item>
-    <name>Master switch</name>
-    <value>ON</value>
-    <condition>
-      <equals>
-	<property>/controls/switches/master</property>
-	<value>1</value>
-      </equals>
-    </condition>
-    <marker>
-      <x-m>-0.3225</x-m>
-      <y-m>-0.0850</y-m>
-      <z-m>-0.2117</z-m>
-      <scale>2.0500</scale>
-    </marker>      
-    <binding>
-      <command>property-assign</command>
-      <property>/controls/switches/master</property>
-      <value>1</value>
+      <command>nasal</command>
+      <script>
+	setprop("/controls/key",4)
+	var key_listener=setlistener("/engines/engine[0]/running", func {
+          if(getprop("/engines/engine[0]/running") == 1)
+            removelistener(key_listener);
+	});
+      </script>
     </binding>
   </item>
 </PropertyList>

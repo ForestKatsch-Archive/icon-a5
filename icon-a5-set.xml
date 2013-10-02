@@ -2,9 +2,8 @@
 
 <PropertyList>
 
-  <sim> 
-    <checklists include="Tutorials/checklists.xml"/>
-    <description>Icon A5</description>
+  <sim>
+    <description>Icon A5 amphibious light sport aircraft</description>
     <author>Forest Ka</author>
 
     <status>beta</status>
@@ -31,16 +30,16 @@
       <internal>true</internal>
       <config>
 	<x-offset-m>-0.3</x-offset-m>
-	<y-offset-m> -0.1</y-offset-m>
-	<z-offset-m>-1.4</z-offset-m>
-	<default-field-of-view-deg type="double">65</default-field-of-view-deg>
+	<y-offset-m>-0.025</y-offset-m>
+	<z-offset-m>-1.48</z-offset-m>
+	<default-field-of-view-deg type="double">60</default-field-of-view-deg>
 	<pitch-offset-deg>-5</pitch-offset-deg>
       </config>
     </view>
 
     <weight n="0">
       <name>Pilot</name>
-      <weight-lb>200</weight-lb>
+      <weight-lb>180</weight-lb>
       <max-lb>300</max-lb>
     </weight>
 
@@ -59,7 +58,13 @@
     <systems include="Systems/electrical.xml">
     </systems>
 
+    <checklists include="Tutorials/checklists.xml"/>
+
   </sim>
+
+  <options>
+    <attitude type="bool">false</attitude>
+  </options>
 
   <consumables>
     <fuel>
@@ -91,9 +96,7 @@
   <limits>
     <vne>120</vne>
     
-    <max-gear-extension-speed>120</max-gear-extension-speed>
-    
-    <max-positive-g>3.0</max-positive-g>
+    <max-positive-g>2.5</max-positive-g>
     <max-negative-g>-0.5</max-negative-g>
     
   </limits>

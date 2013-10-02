@@ -70,6 +70,12 @@
       <prop type="string">/systems/electrical/outputs/cockpit</prop>
     </component>
 
+    <component>
+      <kind type="string">output</kind>
+      <name type="string">Avionics</name>
+      <prop type="string">/systems/electrical/outputs/avionics</prop>
+    </component>
+
     <!-- Connectors -->
 
     <connector>
@@ -123,6 +129,11 @@
     <connector>
       <input type="string">Primary bus</input>
       <output type="string">Gear</output>
+    </connector>
+
+    <connector>
+      <input type="string">Primary bus</input>
+      <output type="string">Avionics</output>
     </connector>
 
   </electrical>

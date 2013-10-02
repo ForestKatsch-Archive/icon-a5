@@ -82,7 +82,7 @@
 	 effectiveness="2.0" incidence="1">
     <stall aoa="15" width="10" peak="1.5" />
 
-    <flap0 start="0" end="0.9" lift="1.3" drag="1.2" />
+    <flap0 start="0" end="0.9" lift="1.5" drag="1.2" />
 
     <control-input axis="/controls/flight/elevator" control="FLAP0" />
     <control-input axis="/controls/flight/elevator-trim" control="FLAP0" />
@@ -94,13 +94,12 @@
   <vstab x="-1.6" y="0.0" z="-0.3"
 	 length="1.5" chord="1.5" sweep="5" taper="0.7">
 
-    <stall aoa="10" width="10" peak="1.5" />
+    <stall aoa="10" width="2" peak="1.5" />
 
     <flap0 start="0.1" end="0.9" lift="1.5" drag="1.2" />
 
     <control-input axis="/controls/flight/rudder" control="FLAP0" invert="true" />
     <control-input axis="/controls/flight/rudder-trim" control="FLAP0" invert="true" />
-    <control-output control="FLAP0" prop="/surface-positions/rudder-pos-norm" />
   </vstab>
 
   <!-- PROP -->

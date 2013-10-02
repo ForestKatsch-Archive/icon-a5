@@ -2,4 +2,5 @@
 
 <PropertyList>
   <checklist include="before-start.xml"/>
+  <checklist include="start.xml"/>
 </PropertyList>
