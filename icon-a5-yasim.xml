@@ -85,7 +85,10 @@
     <flap0 start="0" end="0.9" lift="1.5" drag="1.2" />
 
     <control-input axis="/controls/flight/elevator" control="FLAP0" />
-    <control-input axis="/controls/flight/elevator-trim" control="FLAP0" />
+    <control-input axis="/controls/flight/elevator-trim" control="FLAP0"
+		   src0="-1" src1="1"
+		   dst0="-0.3" dst1="0.3"
+		   />
     <control-output control="FLAP0" prop="/surface-positions/elevator-pos-norm" />
   </hstab>
 

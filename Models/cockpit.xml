@@ -31,8 +31,8 @@
 
     <object-name>aoa needle</object-name>
     <object-name>airspeed needle</object-name>
-    <object-name>altimeter 100 needle</object-name>
-    <object-name>altimeter 1000 needle</object-name>
+    <object-name>altimeter 1k needle</object-name>
+    <object-name>altimeter 10k needle</object-name>
     <object-name>fuel needle</object-name>
     <object-name>tachometer needle</object-name>
     <object-name>oil temp needle</object-name>
@@ -53,6 +53,7 @@
     <object-name>oil temp legend</object-name>
     <object-name>oil pressure legend</object-name>
     <object-name>cylinder head temp legend</object-name>
+    <object-name>trim dial</object-name>
 
   </animation>
 
@@ -270,7 +271,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>altimeter 100 needle</object-name>
+    <object-name>altimeter 1k needle</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>-0.36</factor>
     <center>
@@ -287,7 +288,7 @@
 
   <animation>
     <type>rotate</type>
-    <object-name>altimeter 1000 needle</object-name>
+    <object-name>altimeter 10k needle</object-name>
     <property>instrumentation/altimeter/indicated-altitude-ft</property>
     <factor>-0.036</factor>
     <center>
@@ -729,6 +730,53 @@
 	<script>
 	  var modes=["off","set to left magnetos","set to right magnetos","set to both magnetos","set to start"];
 	  return(modes[arg[0]]);
+	</script>
+      </binding>
+    </hovered>
+
+  </animation>
+  
+  <!-- Trim dial -->
+
+  <animation>
+
+    <type>knob</type>
+    <object-name>trim dial</object-name>
+    <property>controls/flight/elevator-trim</property>
+    <factor>-15</factor>
+    <center>
+      <x-m>-2.10204</x-m>
+      <y-m> 0.021</y-m>
+      <z-m>-0.414065</z-m>
+    </center>
+    <axis>
+      <x>0</x>
+      <y>1</y>
+      <z>0</z>
+    </axis>
+    
+    <drag-direction>vertical</drag-direction>
+
+    <action>
+      <binding>
+	<command>property-adjust</command>
+	<property>controls/flight/elevator-trim</property>
+	<factor>0.05</factor>
+	<min>-1.0</min>
+	<max>1.0</max>
+	<wrap>false</wrap>
+      </binding>
+    </action>
+
+    <hovered>
+      <binding>
+	<command>set-tooltip</command>
+	<label>Trim %d</label>
+        <tooltip-id>trim</tooltip-id>
+	<property>controls/flight/elevator-trim</property>
+	<mapping>nasal</mapping>
+	<script>
+	  return(a5.crange(-1,arg[0],1,-10,10));
 	</script>
       </binding>
     </hovered>
